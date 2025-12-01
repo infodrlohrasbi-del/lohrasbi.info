@@ -1,1156 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Dr. Nader Lohrasbi – Healthcare Transformation Architect & AI Strategist</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description"
-          content="Dr. Nader Lohrasbi – Healthcare Transformation Architect & AI Strategist. Architecting Symbiotic Intelligence, Antifragile Health Systems, and Health Nation OS." />
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Dr. Nader Lohrasbi – Healthcare Transformation Architect & AI Strategist" />
-    <meta property="og:description"
-          content="Symbiotic Intelligence, Healthcare Systems Redesign, and Health Nation OS." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lohrasbi.info/" />
-    <meta property="og:image" content="https://lohrasbi.info/profile.jpg" />
-
-    <!-- Schema.org (JSON-LD basic Person/Organization) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Dr. Nader Lohrasbi",
-      "jobTitle": "Healthcare Transformation Architect & AI Strategist",
-      "url": "https://lohrasbi.info/",
-      "image": "https://lohrasbi.info/profile.jpg",
-      "affiliation": {
-        "@type": "Organization",
-        "name": "Lohrasbi Strategy & Architecture"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/", 
-        "https://scholar.google.com/",
-        "https://orcid.org/"
-      ]
-    }
-    </script>
-
-    <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-          integrity="sha512-hashes-removed-for-brevity"
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <style>
-        :root {
-            --bg-main: #050814;
-            --bg-card: #0b1020;
-            --bg-soft: #111827;
-            --accent: #10b981;
-            --accent-soft: rgba(16, 185, 129, 0.15);
-            --accent-alt: #38bdf8;
-            --text-main: #e5e7eb;
-            --text-muted: #9ca3af;
-            --border-soft: rgba(148, 163, 184, 0.3);
-            --radius-xl: 24px;
-            --radius-lg: 18px;
-            --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.85);
-            --max-width: 1120px;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html, body {
-            height: 100%;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background: radial-gradient(circle at top left, #0b1120, #020617 55%);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        .page-wrapper {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .shell {
-            width: 100%;
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 1.5rem 1.5rem 3rem;
-        }
-
-        /* HEADER / NAV */
-
-        .site-header {
-            position: sticky;
-            top: 0;
-            z-index: 50;
-            backdrop-filter: blur(18px);
-            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.65), transparent);
-            border-bottom: 1px solid rgba(31, 41, 55, 0.8);
-        }
-
-        .nav-inner {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0.9rem 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1.5rem;
-        }
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-        }
-
-        .brand-pill {
-            width: 32px;
-            height: 32px;
-            border-radius: 999px;
-            background: radial-gradient(circle at 30% 20%, #22c55e, #0ea5e9);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 0.85rem;
-            color: #0b1120;
-            box-shadow: 0 10px 30px rgba(34, 197, 94, 0.35);
-        }
-
-        .brand-text-main {
-            font-size: 0.98rem;
-            font-weight: 600;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-        }
-
-        .brand-text-sub {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 1.4rem;
-            font-size: 0.9rem;
-        }
-
-        .nav-links a {
-            padding: 0.35rem 0.3rem;
-            border-radius: 999px;
-            color: var(--text-muted);
-            transition: color 0.15s ease, background-color 0.15s ease;
-        }
-
-        .nav-links a:hover {
-            color: #f9fafb;
-            background: rgba(148, 163, 184, 0.16);
-        }
-
-        .nav-links a.nav-cta {
-            padding: 0.45rem 1.1rem;
-            border-radius: 999px;
-            background: var(--accent);
-            color: #022c22;
-            font-weight: 600;
-            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.45);
-        }
-
-        .nav-links a.nav-cta:hover {
-            background: #22c55e;
-        }
-
-        .nav-toggle {
-            display: none;
-            border: none;
-            background: none;
-            color: var(--text-main);
-            font-size: 1.3rem;
-        }
-
-        /* HERO SECTION */
-
-        .hero {
-            padding-top: 3rem;
-            padding-bottom: 2.5rem;
-        }
-
-        .hero-inner {
-            display: grid;
-            grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.9fr);
-            gap: 2.5rem;
-            background: radial-gradient(circle at top left, #111827, #020617 60%);
-            border-radius: 34px;
-            padding: 2.4rem 2.6rem;
-            border: 1px solid rgba(148, 163, 184, 0.35);
-            box-shadow: var(--shadow-soft);
-        }
-
-        .hero-kicker {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.45rem;
-            padding: 0.2rem 0.7rem;
-            border-radius: 999px;
-            background: rgba(15, 118, 110, 0.2);
-            border: 1px solid rgba(34, 211, 238, 0.4);
-            color: #a5f3fc;
-            font-size: 0.78rem;
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            margin-bottom: 0.9rem;
-        }
-
-        .hero-kicker i {
-            font-size: 0.85rem;
-        }
-
-        .hero-title {
-            font-size: clamp(2.1rem, 3vw, 2.65rem);
-            font-weight: 700;
-            letter-spacing: 0.03em;
-            margin-bottom: 0.6rem;
-        }
-
-        .hero-subtitle {
-            font-size: 1.05rem;
-            color: #bfdbfe;
-            margin-bottom: 0.8rem;
-        }
-
-        .hero-tagline {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            max-width: 32rem;
-            margin-bottom: 1.6rem;
-        }
-
-        .hero-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.45rem;
-            margin-bottom: 1.6rem;
-        }
-
-        .hero-tags span {
-            font-size: 0.8rem;
-            padding: 0.3rem 0.7rem;
-            border-radius: 999px;
-            background: rgba(15, 23, 42, 0.9);
-            border: 1px solid rgba(148, 163, 184, 0.35);
-            color: #e5e7eb;
-        }
-
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            align-items: center;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.45rem;
-            padding: 0.6rem 1.25rem;
-            border-radius: 999px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            border: 1px solid transparent;
-            cursor: pointer;
-            transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease, box-shadow 0.16s ease;
-        }
-
-        .btn-primary {
-            background: linear-gradient(to right, #22c55e, #0ea5e9);
-            color: #022c22;
-            box-shadow: 0 16px 45px rgba(34, 197, 94, 0.55);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 20px 55px rgba(34, 197, 94, 0.7);
-        }
-
-        .btn-outline {
-            background: rgba(15, 23, 42, 0.9);
-            border-color: rgba(148, 163, 184, 0.5);
-            color: var(--text-main);
-        }
-
-        .btn-outline:hover {
-            background: rgba(30, 64, 175, 0.6);
-            border-color: rgba(129, 140, 248, 0.9);
-        }
-
-        .hero-meta {
-            margin-left: 0.45rem;
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-
-        .hero-meta span {
-            color: #a5b4fc;
-        }
-
-        .hero-profile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1.1rem;
-        }
-
-        .hero-photo-wrap {
-            width: 210px;
-            height: 210px;
-            border-radius: 34px;
-            padding: 0.2rem;
-            background: conic-gradient(from 140deg, #22c55e, #0ea5e9, #a855f7, #22c55e);
-        }
-
-        .hero-photo-inner {
-            width: 100%;
-            height: 100%;
-            border-radius: 30px;
-            overflow: hidden;
-            background: #020617;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero-photo-inner img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .hero-badges {
-            display: flex;
-            flex-direction: column;
-            gap: 0.55rem;
-            width: 100%;
-        }
-
-        .badge-line {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            font-size: 0.78rem;
-            padding: 0.45rem 0.7rem;
-            border-radius: 999px;
-            background: rgba(15, 23, 42, 0.85);
-            border: 1px solid rgba(148, 163, 184, 0.3);
-        }
-
-        .badge-line span {
-            color: #e5e7eb;
-        }
-
-        .badge-pill {
-            padding: 0.18rem 0.55rem;
-            border-radius: 999px;
-            background: rgba(16, 185, 129, 0.16);
-            color: #6ee7b7;
-            font-size: 0.72rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-        }
-
-        /* SECTION GENERIC STYLES */
-
-        section {
-            margin-top: 2.5rem;
-        }
-
-        .section-header {
-            display: flex;
-            align-items: baseline;
-            justify-content: space-between;
-            gap: 1rem;
-            margin-bottom: 1.4rem;
-        }
-
-        .section-kicker {
-            font-size: 0.78rem;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            color: var(--accent-alt);
-        }
-
-        .section-title {
-            font-size: 1.4rem;
-            font-weight: 600;
-        }
-
-        .section-subtitle {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            max-width: 460px;
-        }
-
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 1rem;
-        }
-
-        .card {
-            background: var(--bg-card);
-            border-radius: var(--radius-lg);
-            border: 1px solid var(--border-soft);
-            padding: 1rem 1.1rem;
-        }
-
-        .card h3 {
-            font-size: 0.95rem;
-            margin-bottom: 0.3rem;
-        }
-
-        .card p {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
-
-        .pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.35rem;
-            padding: 0.2rem 0.6rem;
-            border-radius: 999px;
-            background: rgba(15, 23, 42, 0.9);
-            border: 1px solid rgba(148, 163, 184, 0.4);
-            font-size: 0.72rem;
-            color: #e5e7eb;
-        }
-
-        /* EXEC SUMMARY */
-
-        .exec-summary {
-            background: rgba(15, 23, 42, 0.92);
-            border-radius: var(--radius-xl);
-            border: 1px solid rgba(55, 65, 81, 0.9);
-            padding: 1.8rem 2rem;
-            box-shadow: 0 18px 45px rgba(15, 23, 42, 0.8);
-        }
-
-        .exec-body {
-            font-size: 0.92rem;
-            color: var(--text-main);
-            max-width: 64rem;
-        }
-
-        .exec-body p + p {
-            margin-top: 0.7rem;
-        }
-
-        .exec-meta-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        /* DIGITAL FORTRESS */
-
-        .fortress-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 1rem;
-        }
-
-        .fortress-card {
-            background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.25), rgba(15, 23, 42, 0.98));
-            border-radius: var(--radius-lg);
-            border: 1px solid rgba(96, 165, 250, 0.5);
-            padding: 1rem 1.1rem;
-        }
-
-        .fortress-card h3 {
-            font-size: 0.92rem;
-            margin-bottom: 0.35rem;
-        }
-
-        .fortress-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.4rem;
-            margin-top: 0.45rem;
-        }
-
-        .fortress-links a {
-            font-size: 0.78rem;
-            padding: 0.2rem 0.55rem;
-            border-radius: 999px;
-            background: rgba(15, 23, 42, 0.92);
-            border: 1px solid rgba(148, 163, 184, 0.4);
-            color: #e5e7eb;
-        }
-
-        .fortress-links a:hover {
-            border-color: var(--accent-alt);
-            color: #f9fafb;
-        }
-
-        /* PUBLICATIONS */
-
-        .articles-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 1rem;
-        }
-
-        .article-card {
-            background: var(--bg-card);
-            border-radius: var(--radius-lg);
-            border: 1px solid var(--border-soft);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
-
-        .article-thumb {
-            height: 140px;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .article-body {
-            padding: 0.9rem 1rem 1rem;
-        }
-
-        .article-body h3 {
-            font-size: 0.9rem;
-            margin-bottom: 0.4rem;
-        }
-
-        .article-body p {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            margin-bottom: 0.6rem;
-        }
-
-        .article-meta {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-size: 0.76rem;
-            color: var(--text-muted);
-        }
-
-        .article-link {
-            font-size: 0.8rem;
-            color: #93c5fd;
-        }
-
-        .article-link i {
-            margin-left: 0.2rem;
-        }
-
-        /* TIMELINE */
-
-        .timeline {
-            background: var(--bg-card);
-            border-radius: var(--radius-xl);
-            border: 1px solid var(--border-soft);
-            padding: 1.6rem 1.7rem;
-        }
-
-        .timeline-row {
-            display: grid;
-            grid-template-columns: 0.2fr 1.8fr;
-            gap: 0.8rem;
-            align-items: start;
-            font-size: 0.86rem;
-            padding: 0.4rem 0;
-        }
-
-        .timeline-year {
-            color: #a5b4fc;
-            font-weight: 500;
-        }
-
-        .timeline-text {
-            color: var(--text-main);
-        }
-
-        /* CONTACT SECTION (SUMMARY) */
-
-        .contact-cta {
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 1.2rem;
-            background: linear-gradient(135deg, rgba(22, 163, 74, 0.22), rgba(15, 23, 42, 0.95));
-            border-radius: var(--radius-xl);
-            border: 1px solid rgba(34, 197, 94, 0.6);
-            padding: 1.6rem 1.8rem;
-        }
-
-        .contact-cta p {
-            font-size: 0.9rem;
-            color: #dcfce7;
-        }
-
-        .contact-actions {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            align-items: flex-start;
-        }
-
-        .contact-actions a {
-            font-size: 0.86rem;
-        }
-
-        /* FOOTER with ICONS */
-
-        .site-footer {
-            margin-top: 2.5rem;
-            padding-top: 1.8rem;
-            padding-bottom: 1.6rem;
-            border-top: 1px solid rgba(31, 41, 55, 0.9);
-            background: linear-gradient(to top, #020617, rgba(15, 23, 42, 0.7));
-        }
-
-        .footer-inner {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 1.5rem;
-            display: grid;
-            grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr);
-            gap: 1.5rem;
-            align-items: center;
-        }
-
-        .footer-left {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-
-        .footer-left strong {
-            color: #e5e7eb;
-        }
-
-        .footer-icons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.45rem;
-            justify-content: flex-end;
-        }
-
-        .footer-icon {
-            width: 34px;
-            height: 34px;
-            border-radius: 999px;
-            background: rgba(15, 23, 42, 0.9);
-            border: 1px solid rgba(148, 163, 184, 0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.9rem;
-            color: #e5e7eb;
-            transition: background 0.16s ease, transform 0.12s ease, border-color 0.16s ease;
-        }
-
-        .footer-icon:hover {
-            background: rgba(37, 99, 235, 0.6);
-            border-color: #60a5fa;
-            transform: translateY(-1px);
-        }
-
-        /* RESPONSIVE */
-
-        @media (max-width: 960px) {
-            .hero-inner {
-                grid-template-columns: minmax(0, 1fr);
-            }
-            .hero-profile {
-                order: -1;
-            }
-            .card-grid,
-            .fortress-grid,
-            .articles-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-            .contact-cta {
-                grid-template-columns: minmax(0, 1fr);
-            }
-            .footer-inner {
-                grid-template-columns: minmax(0, 1fr);
-                text-align: left;
-            }
-            .footer-icons {
-                justify-content: flex-start;
-            }
-        }
-
-        @media (max-width: 720px) {
-            .shell {
-                padding-inline: 1rem;
-            }
-
-            .nav-inner {
-                padding-inline: 1rem;
-            }
-
-            .nav-links {
-                position: absolute;
-                top: 56px;
-                right: 12px;
-                background: rgba(15, 23, 42, 0.96);
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.6rem;
-                padding: 0.7rem 0.85rem;
-                border-radius: 16px;
-                border: 1px solid rgba(55, 65, 81, 0.9);
-                display: none;
-            }
-
-            .nav-links.show {
-                display: flex;
-            }
-
-            .nav-cta {
-                width: 100%;
-                text-align: center;
-            }
-
-            .nav-toggle {
-                display: block;
-            }
-
-            .hero-inner {
-                padding: 1.8rem 1.5rem;
-            }
-
-            .section-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .card-grid,
-            .fortress-grid,
-            .articles-grid {
-                grid-template-columns: minmax(0, 1fr);
-            }
-        }
-    </style>
+<meta charset="UTF-8"/>
+<title>Dr. Nader Lohrasbi – Healthcare Transformation Architect & AI Strategist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Healthcare Transformation Architect & AI Strategist. Symbiotic Intelligence, Health Nation OS, Crisis Architecture.">
+
+<!-- OpenGraph -->
+<meta property="og:title" content="Dr. Nader Lohrasbi – Healthcare Transformation Architect & AI Strategist"/>
+<meta property="og:image" content="https://lohrasbi.info/profile.jpg"/>
+<meta property="og:url" content="https://lohrasbi.info"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<style>
+body{margin:0;font-family:Inter,system-ui;background:#020617;color:#e5e7eb;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+.shell{max-width:1150px;margin:auto;padding:20px}
+
+/* HEADER */
+header{position:sticky;top:0;background:rgba(2,6,23,0.85);backdrop-filter:blur(12px);z-index:50}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+.nav-links a{margin-left:20px;color:#9ca3af;font-size:.9rem}
+.nav-links a:hover{color:#fff}
+.nav-links .cta{padding:6px 14px;background:#10b981;border-radius:20px;color:#021;box-shadow:0 0 15px rgba(16,185,129,.6)}
+
+/* HERO */
+.hero{margin-top:35px;background:radial-gradient(circle at top left,#0f172a,#020617);border:1px solid #1f2937;padding:35px;border-radius:28px;display:grid;grid-template-columns:1.3fr 1fr;gap:30px}
+.hero h1{font-size:2.5rem;margin:0}
+.hero h2{color:#93c5fd;font-size:1.1rem;margin-top:4px}
+.tagline{color:#9ca3af;margin-top:10px;max-width:420px}
+.hero-img{width:220px;height:220px;border-radius:26px;overflow:hidden;border:3px solid #0ea5e9}
+
+/* SECTION TITLES */
+.sec-title{font-size:1.45rem;font-weight:600;margin-bottom:8px}
+.sec-sub{color:#9ca3af;font-size:.9rem;margin-bottom:15px}
+
+/* EXEC SUMMARY */
+.exec{background:#0b1220;border:1px solid #1f2937;padding:25px;border-radius:26px;margin-top:40px}
+
+/* DIGITAL FORTRESS */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#0b1220;border:1px solid #1f2937;padding:20px;border-radius:22px}
+.card h3{margin:0;font-size:1rem}
+.link-pill{display:inline-block;padding:4px 10px;background:#111827;border:1px solid #374151;border-radius:20px;font-size:.78rem;margin:4px 4px 0 0;color:#d1d5db}
+.link-pill:hover{border-color:#38bdf8;color:#fff}
+
+/* STRATEGIC HIGHLIGHTS */
+.highlights{margin-top:45px;background:#0b1220;border:1px solid #1f2937;padding:28px;border-radius:26px}
+.hl-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.hl-item{background:#111827;padding:20px;border-radius:18px;border:1px solid #1f2937}
+.hl-item h4{margin:0 0 6px 0;font-size:1rem}
+.hl-item p{color:#9ca3af;font-size:.88rem}
+
+/* PUBLICATIONS */
+.pub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pub{background:#0b1220;border-radius:22px;border:1px solid #1f2937;overflow:hidden}
+.pub img{height:140px;width:100%;object-fit:cover}
+.pub-body{padding:14px}
+.pub-body h4{margin:0;font-size:.95rem}
+.pub-body p{color:#9ca3af;font-size:.8rem}
+
+/* TIMELINE */
+.timeline{margin-top:40px;background:#0b1220;border:1px solid #1f2937;padding:26px;border-radius:26px}
+.t-row{display:grid;grid-template-columns:120px 1fr;margin-bottom:12px}
+.year{color:#a5b4fc;font-weight:600}
+
+/* CONTACT CTA */
+.cta{margin-top:45px;background:linear-gradient(to right,#064e3b,#020617);padding:26px;border-radius:26px;border:1px solid #065f46}
+.cta p{color:#ccfbf1;margin-top:8px}
+
+/* FOOTER */
+footer{margin-top:55px;padding:20px 0;border-top:1px solid #1f2937;text-align:center}
+.icons a{display:inline-flex;width:38px;height:38px;border-radius:50%;border:1px solid #334155;align-items:center;justify-content:center;margin:4px;font-size:.9rem;color:#e5e7eb}
+.icons a:hover{border-color:#38bdf8;background:#1e40af}
+</style>
 </head>
+
 <body>
-<div class="page-wrapper">
+<header>
+<div class="shell nav">
+<div><strong>Lohrasbi Architecture Lab</strong></div>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="architecture.html">Architecture Lab</a>
+<a href="#fortress">Digital Fortress</a>
+<a href="#publications">Publications</a>
+<a href="contact.html" class="cta">Contact</a>
+</div>
+</div>
+</header>
 
-    <!-- HEADER -->
-    <header class="site-header">
-        <div class="nav-inner">
-            <div class="brand">
-                <div class="brand-pill">NL</div>
-                <div>
-                    <div class="brand-text-main">Lohrasbi Architecture Lab</div>
-                    <div class="brand-text-sub">Healthcare Systems & AI Strategy</div>
-                </div>
-            </div>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav class="nav-links" id="nav-links">
-                <a href="index.html">Home</a>
-                <a href="architecture.html">Architecture Lab</a>
-                <a href="#digital-fortress">Digital Fortress</a>
-                <a href="#publications">Publications</a>
-                <a href="contact.html" class="nav-cta">Contact</a>
-            </nav>
-        </div>
-    </header>
+<div class="shell">
 
-    <main class="shell">
+<!-- HERO -->
+<section class="hero">
+<div>
+<h1>Dr. Nader Lohrasbi</h1>
+<h2>Healthcare Transformation Architect & AI Strategist</h2>
+<p class="tagline">Architecting Symbiotic Intelligence, antifragile health systems, and Health Nation OS.</p>
 
-        <!-- HERO -->
-        <section class="hero" id="top">
-            <div class="hero-inner">
-                <div>
-                    <div class="hero-kicker">
-                        <i class="fas fa-triangle-exclamation"></i>
-                        Healthcare Transformation & AI Strategy
-                    </div>
-                    <h1 class="hero-title">Dr. Nader Lohrasbi</h1>
-                    <h2 class="hero-subtitle">Healthcare Transformation Architect & AI Strategist</h2>
-                    <p class="hero-tagline">
-                        Architecting Symbiotic Intelligence, antifragile health systems, and crisis-ready
-                        architectures for hospitals, health networks, and Health Nation OS.
-                    </p>
+<p style="margin-top:12px;font-size:.85rem;color:#9ca3af">Post-DBA (Harvard Medical School) · DBA (Strategic Management) · PhD (Medical Physics)</p>
 
-                    <div class="hero-tags">
-                        <span>Post-DBA, Harvard Medical School (Crisis Management & AI)</span>
-                        <span>DBA – Strategic Management</span>
-                        <span>PhD – Medical Physics</span>
-                    </div>
+<div style="margin-top:18px">
+<a href="#fortress" class="link-pill" style="background:#10b981;color:#021;border:none">Enter Digital Fortress</a>
+<a href="architecture.html" class="link-pill">Explore Architecture Lab</a>
+</div>
+</div>
 
-                    <div class="hero-actions">
-                        <a href="architecture.html" class="btn btn-primary">
-                            <span>Explore Architecture Lab</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="#digital-fortress" class="btn btn-outline">
-                            <span>Enter Digital Fortress</span>
-                            <i class="fas fa-diagram-project"></i>
-                        </a>
-                        <div class="hero-meta">
-                            <span>2017–2025+</span> · AI, systems redesign & strategic governance
-                        </div>
-                    </div>
-                </div>
+<div style="display:flex;justify-content:center;align-items:center">
+<div class="hero-img">
+<img src="profile.jpg" alt="">
+</div>
+</div>
+</section>
 
-                <div class="hero-profile">
-                    <div class="hero-photo-wrap">
-                        <div class="hero-photo-inner">
-                            <!-- TODO: upload profile.jpg to repo root or change src to your URL -->
-                            <img src="profile.jpg" alt="Dr. Nader Lohrasbi" />
-                        </div>
-                    </div>
-                    <div class="hero-badges">
-                        <div class="badge-line">
-                            <span>23+ years in healthcare · macro-to-micro management</span>
-                        </div>
-                        <div class="badge-line">
-                            <span>Architecting</span>
-                            <span class="badge-pill">Symbiotic Intelligence</span>
-                            <span>for health systems and AI ecosystems</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- EXEC SUMMARY -->
+<section class="exec">
+<div class="sec-title">Executive Summary</div>
+<p>Dr. Lohrasbi works at the intersection of healthcare transformation, AI strategy, and systems architecture. His work operationalizes Symbiotic Intelligence – integrating human judgment, governance, and AI engines across hospitals, networks, and national health systems.</p>
+<p style="margin-top:10px">He designs crisis-ready operating models, Health Nation OS frameworks, data and intelligence pipelines, and architectural blueprints that strengthen resilience, reduce failure modes, and build antifragility by design.</p>
+</section>
 
-        <!-- EXECUTIVE SUMMARY -->
-        <section id="exec-summary">
-            <div class="exec-summary">
-                <div class="section-header">
-                    <div>
-                        <div class="section-kicker">Executive Summary</div>
-                        <h2 class="section-title">Healthcare systems, AI strategy, and antifragile architecture.</h2>
-                    </div>
-                    <p class="section-subtitle">
-                        Designing crisis-ready, AI-augmented health systems that integrate governance,
-                        operations, and intelligence across hospitals, networks, and national health platforms.
-                    </p>
-                </div>
-                <div class="exec-body">
-                    <p>
-                        Dr. Nader Lohrasbi works at the intersection of healthcare transformation, AI strategy,
-                        and systems architecture. With over two decades inside hospitals and health organizations,
-                        he designs macro-to-micro architectures that connect clinical workflows, data pipelines,
-                        and AI engines into coherent, antifragile systems.
-                    </p>
-                    <p>
-                        His work focuses on Symbiotic Intelligence — aligning human judgment, institutional
-                        governance, and machine intelligence to reduce failure modes, increase resilience, and
-                        make health systems crisis-ready by design. This includes digital operating models for
-                        hospitals, Health Nation OS concepts, and architectural blueprints for AI-enabled care.
-                    </p>
-                    <p>
-                        This space is the public gateway into his strategic frameworks, publications, and
-                        Digital Fortress – a curated, multi-platform ecosystem spanning scholarly output,
-                        executive insights, and architecture labs.
-                    </p>
+<!-- DIGITAL FORTRESS -->
+<section id="fortress" style="margin-top:45px">
+<div class="sec-title">Digital Fortress</div>
+<div class="sec-sub">Fourteen platforms unified into one coherent strategic architecture.</div>
 
-                    <div class="exec-meta-row">
-                        <span class="pill"><i class="fas fa-graduation-cap"></i> Post-DBA, Harvard Medical School – Crisis Management & AI</span>
-                        <span class="pill"><i class="fas fa-flask"></i> PhD – Medical Physics</span>
-                        <span class="pill"><i class="fas fa-sitemap"></i> Healthcare Systems Redesign & Governance</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div class="grid-3">
 
-        <!-- DIGITAL FORTRESS -->
-        <section id="digital-fortress">
-            <div class="section-header">
-                <div>
-                    <div class="section-kicker">Digital Fortress</div>
-                    <h2 class="section-title">Twelve platforms, one coherent strategic architecture.</h2>
-                </div>
-                <p class="section-subtitle">
-                    A deliberately orchestrated ecosystem across identity, scientific authority, executive
-                    insight, and AI architecture – built for search dominance and systems coherence.
-                </p>
-            </div>
+<!-- Identity -->
+<div class="card">
+<h3>Identity Core</h3>
+<a class="link-pill" href="https://about.me/dr.naderlohrasbi" target="_blank"><i class="fa-solid fa-id-card"></i> About.me</a>
+<a class="link-pill" href="https://www.linkedin.com/in/nader-lohrasbi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+<a class="link-pill" href="https://orcid.org/0009-0004-4232-2953" target="_blank"><i class="fa-solid fa-circle-nodes"></i> ORCID</a>
+</div>
 
-            <div class="fortress-grid">
-                <!-- Identity Core -->
-                <div class="fortress-card">
-                    <h3>Identity Core</h3>
-                    <p class="section-subtitle" style="font-size:0.78rem;margin-top:0.25rem;">
-                        Primary identity anchors and executive presence.
-                    </p>
-                    <div class="fortress-links">
-                        <!-- TODO: replace # with your actual links -->
-                        <a href="#" target="_blank"><i class="fas fa-id-card"></i> About.me (Central Hub)</a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-                        <a href="#" target="_blank"><i class="fas fa-circle-nodes"></i> ORCID</a>
-                    </div>
-                </div>
+<!-- Scientific -->
+<div class="card">
+<h3>Scientific Authority</h3>
+<a class="link-pill" href="https://hms-harvard.academia.edu/NaderLohrasbi" target="_blank">Academia</a>
+<a class="link-pill" href="https://scholar.google.com/citations?user=sz_EXuAAAAAJ" target="_blank">Google Scholar</a>
+<a class="link-pill" href="https://zenodo.org/search?q=Nader%20Lohrasbi" target="_blank">Zenodo</a>
+<a class="link-pill" href="https://figshare.com/authors/Nader_Lohrasbi/22668938" target="_blank">Figshare</a>
+<a class="link-pill" href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=9241472" target="_blank">SSRN</a>
+</div>
 
-                <!-- Scientific Authority -->
-                <div class="fortress-card">
-                    <h3>Scientific Authority</h3>
-                    <p class="section-subtitle" style="font-size:0.78rem;margin-top:0.25rem;">
-                        Peer-reviewed work, preprints, and DOI-backed outputs.
-                    </p>
-                    <div class="fortress-links">
-                        <a href="#" target="_blank"><i class="fas fa-flask"></i> Google Scholar</a>
-                        <a href="#" target="_blank"><i class="fas fa-scroll"></i> SSRN</a>
-                        <a href="#" target="_blank"><i class="fas fa-dna"></i> Zenodo (DOI)</a>
-                        <a href="#" target="_blank"><i class="fas fa-database"></i> Figshare</a>
-                        <a href="#" target="_blank"><i class="fas fa-university"></i> Academia.edu</a>
-                        <a href="#" target="_blank"><i class="fas fa-users"></i> ResearchGate</a>
-                    </div>
-                </div>
+<!-- Executive -->
+<div class="card">
+<h3>Executive & Thought Leadership</h3>
+<a class="link-pill" href="https://medium.com/@info.dr.lohrasbi" target="_blank">Medium</a>
+<a class="link-pill" href="https://drlohrasbi.substack.com" target="_blank">Substack</a>
+<a class="link-pill" href="https://www.slideshare.net/DrNaderLohrasbi" target="_blank">SlideShare</a>
+<a class="link-pill" href="https://issuu.com/drnaderlohrasbi" target="_blank">Issuu</a>
+<a class="link-pill" href="https://github.com/DrNaderLohrasbi" target="_blank">GitHub</a>
+</div>
 
-                <!-- Executive & Thought Leadership -->
-                <div class="fortress-card">
-                    <h3>Executive & Thought Leadership</h3>
-                    <p class="section-subtitle" style="font-size:0.78rem;margin-top:0.25rem;">
-                        Strategy narratives, slideware, and AI architecture assets.
-                    </p>
-                    <div class="fortress-links">
-                        <a href="#" target="_blank"><i class="fab fa-medium-m"></i> Medium</a>
-                        <a href="#" target="_blank"><i class="fas fa-newspaper"></i> Substack</a>
-                        <a href="#" target="_blank"><i class="fas fa-sliders"></i> SlideShare</a>
-                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub (AI Architecture)</a>
-                        <a href="#" target="_blank"><i class="fas fa-book-open"></i> Issuu</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+</div>
+</section>
 
-        <!-- PUBLICATIONS -->
-        <section id="publications">
-            <div class="section-header">
-                <div>
-                    <div class="section-kicker">Featured Publications</div>
-                    <h2 class="section-title">Selected articles and architecture briefs.</h2>
-                </div>
-                <p class="section-subtitle">
-                    A sample of LinkedIn essays, strategic memos, and architecture notes aligned with
-                    AI, crisis management, and health systems redesign.
-                </p>
-            </div>
+<!-- STRATEGIC HIGHLIGHTS (NEW SECTION - Option B) -->
+<section class="highlights">
+<div class="sec-title">Strategic Highlights</div>
+<div class="sec-sub">Core themes shaping Symbiotic Intelligence and Health Nation OS.</div>
 
-            <div class="articles-grid">
-                <!-- Article 1 -->
-                <article class="article-card">
-                    <!-- TODO: change background-image URLs and links to real LinkedIn posts -->
-                    <div class="article-thumb"
-                         style="background-image:url('https://via.placeholder.com/640x360.png?text=Article+1');"></div>
-                    <div class="article-body">
-                        <h3>Title of Key LinkedIn Article #1</h3>
-                        <p>
-                            Short positioning sentence on AI strategy, healthcare resilience, or Symbiotic Intelligence.
-                        </p>
-                        <div class="article-meta">
-                            <span>LinkedIn · 2025</span>
-                            <a class="article-link" href="#" target="_blank">
-                                Read on LinkedIn <i class="fas fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+<div class="hl-grid">
+<div class="hl-item">
+<h4>Symbiotic Intelligence</h4>
+<p>Integrated intelligence model combining human governance, machine reasoning, and system-level feedback loops.</p>
+</div>
 
-                <!-- Article 2 -->
-                <article class="article-card">
-                    <div class="article-thumb"
-                         style="background-image:url('https://via.placeholder.com/640x360.png?text=Article+2');"></div>
-                    <div class="article-body">
-                        <h3>Title of Key LinkedIn Article #2</h3>
-                        <p>
-                            Short summary highlighting architectures for Health Nation OS or hospital OS.
-                        </p>
-                        <div class="article-meta">
-                            <span>LinkedIn · 2024</span>
-                            <a class="article-link" href="#" target="_blank">
-                                Read on LinkedIn <i class="fas fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+<div class="hl-item">
+<h4>Health Nation OS</h4>
+<p>National-scale architecture linking hospitals, networks, ministries, and data layers into one coherent operating system.</p>
+</div>
 
-                <!-- Article 3 -->
-                <article class="article-card">
-                    <div class="article-thumb"
-                         style="background-image:url('https://via.placeholder.com/640x360.png?text=Article+3');"></div>
-                    <div class="article-body">
-                        <h3>Title of Key LinkedIn Article #3</h3>
-                        <p>
-                            Focused on crisis-ready architectures, governance, and antifragility in health systems.
-                        </p>
-                        <div class="article-meta">
-                            <span>LinkedIn · 2023</span>
-                            <a class="article-link" href="#" target="_blank">
-                                Read on LinkedIn <i class="fas fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
+<div class="hl-item">
+<h4>Antifragile Operating Models</h4>
+<p>Redesigning hospital OS and workflows to reduce failure modes and enhance resilience during crises.</p>
+</div>
 
-        <!-- TIMELINE -->
-        <section id="timeline">
-            <div class="section-header">
-                <div>
-                    <div class="section-kicker">AI Journey</div>
-                    <h2 class="section-title">From applied AI in healthcare to Symbiotic Intelligence.</h2>
-                </div>
-                <p class="section-subtitle">
-                    A condensed view of the AI arc – from early adoption and experimentation to strategic,
-                    architecture-level work across health systems.
-                </p>
-            </div>
+<div class="hl-item">
+<h4>Crisis Architecture</h4>
+<p>Frameworks enabling early detection, mitigation loops, and structural system immunity.</p>
+</div>
+</div>
+</section>
 
-            <div class="timeline">
-                <div class="timeline-row">
-                    <div class="timeline-year">2017–2019</div>
-                    <div class="timeline-text">
-                        Early AI and machine learning work in imaging, workflow optimization, and
-                        decision support inside hospital environments.
-                    </div>
-                </div>
-                <div class="timeline-row">
-                    <div class="timeline-year">2020–2022</div>
-                    <div class="timeline-text">
-                        Expansion into system-wide redesign, crisis management, and AI-enabled operating
-                        models during high-volatility periods.
-                    </div>
-                </div>
-                <div class="timeline-row">
-                    <div class="timeline-year">2023–2024</div>
-                    <div class="timeline-text">
-                        Development of Symbiotic Intelligence concepts, Health Nation OS framing, and
-                        architecture layers for hospital and network-level AI.
-                    </div>
-                </div>
-                <div class="timeline-row">
-                    <div class="timeline-year">2025+</div>
-                    <div class="timeline-text">
-                        Consolidation of the Digital Fortress, codifying frameworks, and designing
-                        scalable architectures for national and cross-institutional health systems.
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- PUBLICATIONS -->
+<section id="publications" style="margin-top:50px">
+<div class="sec-title">Featured Publications</div>
+<div class="sec-sub">Selected essays and briefs across AI, architecture, and crisis systems.</div>
 
-        <!-- CONTACT SUMMARY CTA -->
-        <section id="contact">
-            <div class="contact-cta">
-                <div>
-                    <div class="section-kicker">Collaboration</div>
-                    <h2 class="section-title" style="margin-top:0.3rem;">Strategic conversations, architecture work, and advisory.</h2>
-                    <p style="margin-top:0.7rem;">
-                        For healthcare leaders, boards, and AI teams seeking to redesign systems, stress-test
-                        architectures, or build Symbiotic Intelligence into their operating models.
-                    </p>
-                </div>
-                <div class="contact-actions">
-                    <a href="mailto:info@lohrasbi.info" class="btn btn-outline">
-                        <i class="fas fa-envelope"></i>
-                        <span>Email · info@lohrasbi.info</span>
-                    </a>
-                    <a href="https://www.linkedin.com/" target="_blank" class="btn btn-outline">
-                        <i class="fab fa-linkedin-in"></i>
-                        <span>Connect on LinkedIn</span>
-                    </a>
-                    <a href="contact.html" class="btn btn-primary">
-                        <span>Open Contact Page</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
+<div class="pub-grid">
 
-    </main>
+<div class="pub">
+<img src="https://via.placeholder.com/600x350?text=Publication+1">
+<div class="pub-body">
+<h4>Key LinkedIn Article #1</h4>
+<p>Symbiotic Intelligence & AI Strategy</p>
+</div>
+</div>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <div class="footer-inner">
-            <div class="footer-left">
-                <div>© 2025 <strong>Dr. Nader Lohrasbi</strong> — Lohrasbi Strategy &amp; Architecture.</div>
-                <div>Symbiotic Intelligence · Healthcare Systems Redesign · Health Nation OS.</div>
-            </div>
-            <div class="footer-icons">
-                <!-- TODO: replace # with real links -->
-                <a href="#" class="footer-icon" target="_blank" title="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#" class="footer-icon" target="_blank" title="Google Scholar">
-                    <i class="fas fa-flask"></i>
-                </a>
-                <a href="#" class="footer-icon" target="_blank" title="ORCID">
-                    <i class="fas fa-circle-nodes"></i>
-                </a>
-                <a href="#" class="footer-icon" target="_blank" title="SSRN">
-                    <i class="fas fa-scroll"></i>
-                </a>
-                <a href="#" class="footer-icon" target="_blank" title="Zenodo">
-                    <i class="fas fa-dna"></i>
-                </a>
-                <a href="#" class="footer-icon" target="_blank" title="ResearchGate">
-                    <i class="fas fa-users"></i>
-                </a>
-                <a href="#" class="footer-icon" target="_blank" title="Medium">
-                    <i class="fab fa-medium-m"></i>
-                </a>
-                <a href="#" class="footer-icon" target="_blank" title="Substack">
-                    <i class="fas fa-newspaper"></i>
-                </a>
-                <a href="#" class="footer-icon" target="_blank" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
+<div class="pub">
+<img src="https://via.placeholder.com/600x350?text=Publication+2">
+<div class="pub-body">
+<h4>Key LinkedIn Article #2</h4>
+<p>Health Nation OS & System Design</p>
+</div>
+</div>
+
+<div class="pub">
+<img src="https://via.placeholder.com/600x350?text=Publication+3">
+<div class="pub-body">
+<h4>Key LinkedIn Article #3</h4>
+<p>Crisis Architecture & Antifragility</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline">
+<div class="sec-title">AI Journey (2017–2025)</div>
+
+<div class="t-row">
+<div class="year">2017–2019</div>
+<div>AI in imaging, workflow optimization, and hospital decision support.</div>
+</div>
+
+<div class="t-row">
+<div class="year">2020–2022</div>
+<div>System redesign, crisis management, AI-enabled operating models.</div>
+</div>
+
+<div class="t-row">
+<div class="year">2023–2024</div>
+<div>Symbiotic Intelligence, Health Nation OS & architectural frameworks.</div>
+</div>
+
+<div class="t-row">
+<div class="year">2025+</div>
+<div>Scaling Digital Fortress & national-level system architectures.</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<div class="sec-title">Collaboration & Strategic Advisory</div>
+<p>For leaders, boards, ministries, and AI teams redesigning healthcare systems.</p>
+<a href="contact.html" class="link-pill" style="margin-top:12px;background:#10b981;color:#021;border:none">Open Contact Page</a>
+</section>
 
 </div>
 
-<script>
-    // Simple mobile nav toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.getElementById('nav-links');
+<footer>
+<div>© 2025 Dr. Nader Lohrasbi · Lohrasbi Strategy & Architecture</div>
+<div class="icons" style="margin-top:10px">
 
-    if (navToggle && navLinks) {
-        navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('show');
-        });
-    }
-</script>
+<a href="https://www.linkedin.com/in/nader-lohrasbi" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="https://scholar.google.com/citations?user=sz_EXuAAAAAJ" target="_blank"><i class="fa-solid fa-flask"></i></a>
+<a href="https://orcid.org/0009-0004-4232-2953" target="_blank"><i class="fa-solid fa-circle-nodes"></i></a>
+<a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=9241472" target="_blank"><i class="fa-solid fa-scroll"></i></a>
+<a href="https://zenodo.org/search?q=Nader%20Lohrasbi" target="_blank"><i class="fa-solid fa-dna"></i></a>
+<a href="https://figshare.com/authors/Nader_Lohrasbi/22668938" target="_blank"><i class="fa-solid fa-database"></i></a>
+<a href="https://hms-harvard.academia.edu/NaderLohrasbi" target="_blank"><i class="fa-solid fa-university"></i></a>
+<a href="https://medium.com/@info.dr.lohrasbi" target="_blank"><i class="fab fa-medium-m"></i></a>
+<a href="https://drlohrasbi.substack.com" target="_blank"><i class="fa-solid fa-newspaper"></i></a>
+<a href="https://github.com/DrNaderLohrasbi" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://issuu.com/drnaderlohrasbi" target="_blank"><i class="fa-solid fa-book-open"></i></a>
+
+</div>
+</footer>
+
 </body>
 </html>
