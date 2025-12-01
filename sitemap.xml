@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://lohrasbi.info/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://lohrasbi.info/index.html</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://lohrasbi.info/architecture.html</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://lohrasbi.info/contact.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://lohrasbi.info/profile.jpg</loc>
+  </url>
+
+  <url>
+    <loc>https://lohrasbi.info/pub1.jpg</loc>
+  </url>
+
+  <url>
+    <loc>https://lohrasbi.info/pub2.jpg</loc>
+  </url>
+
+  <url>
+    <loc>https://lohrasbi.info/pub3.jpg</loc>
+  </url>
+
+</urlset>
