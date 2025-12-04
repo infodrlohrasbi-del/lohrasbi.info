@@ -191,6 +191,24 @@
     }
   </style>
 </head>
+<div id="visitor-counter" style="font-size:18px; font-weight:600; margin-top:20px;">
+    Loading visitors...
+</div>
+
+<script>
+async function loadVisitorCount() {
+    try {
+        const res = await fetch("https://square-art-7d41.info-dr-lohrasbi.workers.dev");
+        const data = await res.json();
+        document.getElementById("visitor-counter").innerText =
+            "Total Visitors: " + data.visits;
+    } catch (e) {
+        document.getElementById("visitor-counter").innerText =
+            "Visitor count unavailable";
+    }
+}
+loadVisitorCount();
+</script>
 
 <body>
 <header>
