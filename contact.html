@@ -1,133 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <title>Contact – Lohrasbi Architecture Lab</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Executive contact channels for Dr. Nader Lohrasbi – Healthcare Systems Architect & AI Strategist. For ministries, universities, and system-level transformation programs." />
+  <meta name="theme-color" content="#020617"/>
 
-  <meta name="description" content="Executive contact channels for ministries, boards, and leaders seeking healthcare transformation architecture, AI governance, and national OS design."/>
+  <!-- FAVICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Contact – Lohrasbi Architecture Lab"/>
+  <meta property="og:description" content="Executive-level contact channels for ministries, universities, and AI-driven national healthcare programs."/>
+  <meta property="og:url" content="https://lohrasbi.info/contact.html"/>
+  <meta property="og:image" content="https://lohrasbi.info/profile-main.jpg"/>
+
+  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <style>
     body{
-      margin:0;
+      margin:0;background:#020617;color:#e5e7eb;
       font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      background:#020617;
-      color:#e5e7eb;
     }
-    a{text-decoration:none;color:inherit}
+    a{text-decoration:none;color:inherit;}
 
-    .shell{
-      max-width:1180px;
-      margin:0 auto;
-      padding:24px 22px 70px;
-    }
-
-    /* NAV */
+    /* Navigation */
     header{
-      position:sticky;top:0;z-index:40;
-      background:rgba(2,6,23,.95);
+      position:sticky;top:0;z-index:50;
+      background:rgba(2,6,23,.92);
       backdrop-filter:blur(14px);
-      border-bottom:1px solid rgba(255,255,255,.06);
+      border-bottom:1px solid rgba(15,23,42,.7);
     }
     .nav{
-      max-width:1180px;margin:0 auto;padding:14px 20px;
-      display:flex;align-items:center;justify-content:space-between;
+      max-width:1180px;margin:auto;
+      padding:14px 22px;
+      display:flex;justify-content:space-between;align-items:center;
     }
-    .nav-left{font-weight:600;font-size:.95rem;}
-    .nav-left span{opacity:.7;font-size:.78rem;margin-left:6px;}
-    .nav-links{display:flex;gap:18px;font-size:.88rem;}
-    .nav-links a{padding:6px 10px;border-radius:999px;color:#94a3b8;}
-    .nav-links a:hover{background:rgba(255,255,255,.06);color:#fff;}
-    .nav-links .active{
+    .nav-left{
+      font-size:.95rem;font-weight:600;
+    }
+    .nav-left span{
+      margin-left:6px;color:#64748b;font-weight:400;font-size:.8rem;
+    }
+    .nav-links{
+      display:flex;gap:18px;font-size:.86rem;
+    }
+    .nav-links a{
+      padding:6px 12px;border-radius:999px;color:#94a3b8;transition:.16s;
+    }
+    .nav-links a:hover{
+      background:rgba(15,23,42,.9);color:#fff;
+    }
+    .nav-links a.active{
       background:#22c55e;color:#022c22;font-weight:600;
     }
 
-    /* HERO */
-    .hero{
-      margin-top:30px;padding:44px 38px;
-      background:radial-gradient(circle at top,#0b1120,#020617 70%);
-      border-radius:34px;
-      border:1px solid rgba(34,197,94,.4);
-      box-shadow:0 24px 80px rgba(0,0,0,.55);
+    /* Shell */
+    .shell{
+      max-width:1180px;margin:auto;
+      padding:40px 22px 90px;
     }
-    .hero h1{
-      font-size:2.3rem;margin:0 0 10px;font-weight:700;color:#f9fafb;
+    .title{
+      font-size:2.3rem;font-weight:700;color:#f8fafc;margin-bottom:8px;
     }
-    .hero p{
-      max-width:760px;font-size:1.05rem;color:#a5f3fc;
+    .subtitle{
+      color:#93c5fd;font-size:1.1rem;max-width:760px;margin-bottom:40px;
     }
 
-    /* GRID */
-    .grid{
-      margin-top:40px;
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:22px;
+    .section{
+      background:rgba(15,23,42,.9);
+      padding:36px;border-radius:24px;margin-bottom:40px;
+      border:1px solid #1e293b;
+      box-shadow:0 16px 50px rgba(0,0,0,.35);
     }
-    .card{
-      background:#0f172a;
-      border-radius:22px;
-      border:1px solid rgba(255,255,255,.05);
-      padding:22px;
-      box-shadow:0 14px 40px rgba(0,0,0,.45);
+    .sec-label{
+      font-size:.75rem;color:#64748b;text-transform:uppercase;letter-spacing:.1em;
+      margin-bottom:6px;
     }
-    .card h3{
-      margin:0 0 6px;
-      font-size:1.1rem;
-      font-weight:600;
-      color:#f1f5f9;
+    .sec-title{
+      font-size:1.5rem;font-weight:600;color:#f1f5f9;margin-bottom:16px;
     }
-    .card p{
-      margin:0 0 14px;font-size:.9rem;color:#94a3b8;
-    }
-    .email{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:8px 14px;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(148,163,184,.4);
-      border-radius:999px;
-      font-size:.88rem;
-    }
-    .email:hover{
-      background:rgba(255,255,255,.12);
-      border-color:#38bdf8;
+    .sec-text{
+      font-size:.95rem;color:#94a3b8;line-height:1.6;max-width:760px;margin-bottom:20px;
     }
 
-    /* CTA BOX */
-    .cta{
+    .contact-item{
+      margin:14px 0;
+      padding:16px;
+      background:rgba(2,6,23,.6);
+      border-radius:14px;
+      border:1px solid #1e293b;
+      display:flex;align-items:center;gap:16px;
+    }
+    .contact-item i{
+      font-size:1.4rem;color:#38bdf8;
+    }
+    .contact-item strong{
+      color:#f8fafc;font-size:1rem;
+    }
+    .contact-item span{
+      font-size:.85rem;color:#94a3b8;
+    }
+
+    /* CTA */
+    .cta-box{
       margin-top:50px;
-      background:linear-gradient(to right,#064e3b,#020617);
       padding:26px;
-      border-radius:26px;
-      border:1px solid #065f46;
-      box-shadow:0 20px 60px rgba(6,78,59,.55);
+      background:linear-gradient(to right,#064e3b,#020617);
+      border-radius:24px;
+      border:1px solid #0f766e;
+      box-shadow:0 18px 55px rgba(6,78,59,.55);
     }
-    .cta h2{
-      margin:0 0 10px;
-      font-size:1.55rem;color:#f0fdfa;
-      font-weight:600;
+    .cta-box h3{
+      color:#bbf7d0;font-size:1.4rem;margin-bottom:8px;
     }
-    .cta p{
-      color:#ccfbf1;font-size:.98rem;margin:0 0 18px;
+    .cta-box p{
+      color:#ccfbf1;font-size:.95rem;margin-bottom:14px;
     }
-    .cta a{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:10px 20px;
-      background:#22c55e;
-      color:#022c22;
-      font-weight:600;
-      border-radius:999px;
-      font-size:.9rem;
+    .cta-btn{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 20px;border-radius:999px;
+      background:#22c55e;color:#022c22;font-weight:600;
+      box-shadow:0 16px 45px rgba(16,185,129,.25);
     }
-    .cta a:hover{opacity:.9;}
 
+    footer{
+      text-align:center;margin-top:60px;
+      padding:20px 0;border-top:1px solid #1e293b;
+      font-size:.8rem;color:#64748b;
+    }
   </style>
 </head>
 
@@ -137,95 +146,93 @@
   <div class="nav">
     <div class="nav-left">
       Lohrasbi Architecture Lab
-      <span>Executive Office</span>
+      <span>Contact · Executive Office</span>
     </div>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="architecture.html">Architecture Lab</a>
       <a href="research.html">Research</a>
-      <a class="active" href="contact.html">Contact</a>
+      <a href="index.html#digital-fortress">Digital Fortress</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="contact.html" class="active">Contact</a>
     </div>
   </div>
 </header>
 
 <div class="shell">
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Executive Contact & Strategic Engagement</h1>
-  <p>
-    For ministries, boards, and executive teams leading complex healthcare transformations.
-    All requests are triaged through dedicated architecture, strategy, and research channels.
-  </p>
-</section>
-
-<!-- CONTACT GRID -->
-<section class="grid">
-
-  <div class="card">
-    <h3>Executive Office</h3>
-    <p>High-level coordination for ministries, boards, and national decision-makers.</p>
-    <a class="email" href="mailto:executive.office@lohrasbi.info">
-      <i class="fa-solid fa-building-columns"></i> executive.office@lohrasbi.info
-    </a>
+  <div class="title">Executive Contact Office</div>
+  <div class="subtitle">
+    Direct channels for ministries, universities, national programs, and strategic partners.
   </div>
 
-  <div class="card">
-    <h3>Strategy Desk</h3>
-    <p>Health Nation OS, AI governance, and system-level redesign requests.</p>
-    <a class="email" href="mailto:strategy@lohrasbi.info">
-      <i class="fa-solid fa-diagram-project"></i> strategy@lohrasbi.info
-    </a>
+  <!-- EXECUTIVE -->
+  <div class="section">
+    <div class="sec-label">Executive Office</div>
+    <div class="sec-title">High-level engagements</div>
+    <div class="sec-text">
+      برای همکاری‌های معماری سطح ملی، تحول نظام سلامت، AI governance، و مشاوره‌های سطح هیئت‌مدیره.
+    </div>
+
+    <div class="contact-item">
+      <i class="fa-solid fa-envelope"></i>
+      <div>
+        <strong>Executive Office</strong><br>
+        <span>info.dr.lohrasbi@gmail.com</span>
+      </div>
+    </div>
+
   </div>
 
-  <div class="card">
-    <h3>Research Desk</h3>
-    <p>DOIs, publications, and academic or scientific collaboration.</p>
-    <a class="email" href="mailto:research@lohrasbi.info">
-      <i class="fa-solid fa-flask"></i> research@lohrasbi.info
-    </a>
+  <!-- RESEARCH -->
+  <div class="section">
+    <div class="sec-label">Research & Publications</div>
+    <div class="sec-title">Academic & Scientific Communication</div>
+    <div class="sec-text">
+      برای ارتباطات پژوهشی، دانشگاهی، نشریات، DOI releases و همکاری‌های علمی.
+    </div>
+
+    <div class="contact-item">
+      <i class="fa-solid fa-flask"></i>
+      <div>
+        <strong>Research Desk</strong><br>
+        <span>research.lohrasbi@gmail.com</span>
+      </div>
+    </div>
   </div>
 
-  <div class="card">
-    <h3>Executive Communications</h3>
-    <p>Official statements, interviews, and external representation.</p>
-    <a class="email" href="mailto:press@lohrasbi.info">
-      <i class="fa-solid fa-bullhorn"></i> press@lohrasbi.info
-    </a>
+  <!-- STRATEGY -->
+  <div class="section">
+    <div class="sec-label">Strategy & AI Systems</div>
+    <div class="sec-title">Architecture • National OS • Crisis Systems</div>
+    <div class="sec-text">
+      برای همکاری در برنامه‌های AI-enabled Healthcare Systems، Crisis Architecture، و National OS frameworks.
+    </div>
+
+    <div class="contact-item">
+      <i class="fa-solid fa-sitemap"></i>
+      <div>
+        <strong>Strategy Desk</strong><br>
+        <span>strategy.lohrasbi@gmail.com</span>
+      </div>
+    </div>
   </div>
 
-  <div class="card">
-    <h3>General Information</h3>
-    <p>Administrative questions and basic information requests.</p>
-    <a class="email" href="mailto:info@lohrasbi.info">
-      <i class="fa-solid fa-circle-info"></i> info@lohrasbi.info
+  <!-- CTA -->
+  <div class="cta-box">
+    <h3>Collaboration Inquiry</h3>
+    <p>اگر قصد همکاری در سطح سیستم، معماری ملی یا برنامه‌های AI-driven را دارید — دفتر اجرایی آماده بررسی است.</p>
+    <a href="mailto:info.dr.lohrasbi@gmail.com" class="cta-btn">
+      <i class="fa-solid fa-paper-plane"></i>
+      Send Inquiry
     </a>
   </div>
-
-  <div class="card">
-    <h3>Executive Advisory</h3>
-    <p>Private consultation pathways for confidential projects.</p>
-    <a class="email" href="mailto:executive@lohrasbi.info">
-      <i class="fa-solid fa-shield-heart"></i> executive@lohrasbi.info
-    </a>
-  </div>
-
-</section>
-
-<!-- CTA -->
-<section class="cta">
-  <h2>Request a Strategic Advisory Meeting</h2>
-  <p>
-    Formal requests for national healthcare systems, crisis architecture, AI governance,
-    and executive transformation programs are reviewed within 24–48 hours.
-  </p>
-  <a href="mailto:executive.office@lohrasbi.info">
-    <i class="fa-solid fa-calendar-check"></i>
-    Initiate Engagement
-  </a>
-</section>
 
 </div>
+
+<footer>
+  © 2025 Dr. Nader Lohrasbi · Lohrasbi Strategy & Architecture
+</footer>
 
 </body>
 </html>
