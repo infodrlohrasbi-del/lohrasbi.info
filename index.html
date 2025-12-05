@@ -3,270 +3,182 @@
 <head>
   <meta charset="UTF-8"/>
   <title>Dr. Nader Lohrasbi – Healthcare Transformation Architect & AI Strategist</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="theme-color" content="#000814"/>
 
   <meta name="description"
-        content="Healthcare Transformation Architect & AI Strategist. Architecting Symbiotic Intelligence, Health Nation OS, Crisis Architecture Frameworks, and next-generation national health systems." />
+        content="National Health Systems • AI Strategy • Symbiotic Intelligence • Crisis Architecture • Health Nation OS • 30 Strategic Blueprints." />
 
-  <!-- FONTS -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 
-  <!-- ICONS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="favicon-96x96.png"/>
 
-  <!-- FAVICONS -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="manifest" href="/site.webmanifest"/>
-
-  <!-- ==========================================================
-       JSON-LD KNOWLEDGE GRAPH
-  =========================================================== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://lohrasbi.info#person",
-      "name": "Dr. Nader Lohrasbi",
-      "jobTitle": "Healthcare Transformation Architect & AI Strategist",
-      "url": "https://lohrasbi.info",
-      "image": "https://lohrasbi.info/profile-main.jpg",
-      "knowsAbout": [
-        "Healthcare Systems Architecture",
-        "AI Strategy",
-        "Crisis Architecture",
-        "Symbiotic Intelligence",
-        "Health Nation OS",
-        "Antifragile Hospital Design",
-        "National Healthcare Transformation",
-        "Macro–Micro Alignment Models"
-      ],
-      "sameAs": [
-        "https://www.linkedin.com/in/nader-lohrasbi",
-        "https://orcid.org/0009-0004-4232-2953",
-        "https://scholar.google.com/citations?user=sz_EXuAAAAAJ",
-        "https://github.com/DrNaderLohrasbi",
-        "https://zenodo.org/search?q=Nader%20Lohrasbi",
-        "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=9241472",
-        "https://drlohrasbi.substack.com",
-        "https://www.slideshare.net/DrNaderLohrasbi",
-        "https://figshare.com/authors/Nader_Lohrasbi/22668938",
-        "https://issuu.com/drnaderlohrasbi"
-      ],
-      "affiliation": {
-        "@id": "https://lohrasbi.info#org"
-      }
-    },
-
-    {
-      "@type": "Organization",
-      "@id": "https://lohrasbi.info#org",
-      "name": "Lohrasbi Architecture Lab",
-      "url": "https://lohrasbi.info",
-      "logo": "https://lohrasbi.info/favicon-96x96.png",
-      "description": "A strategic laboratory designing national health architectures, AI-enabled operating systems, and crisis-resilient governance frameworks.",
-      "founder": { "@id": "https://lohrasbi.info#person" }
+  <style>
+    /* -----------------------------------------------------------
+       GLOBAL RESET
+    ------------------------------------------------------------*/
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Inter', sans-serif;
     }
-  ]
-}
-</script>
+    body{
+      background:#000814;
+      color:#e2e8f0;
+      overflow-x:hidden;
+    }
+    h1,h2,h3,h4,h5{
+      font-weight:700;
+      line-height:1.3;
+    }
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
 
-<!-- ==========================================================
-     GLOBAL STYLE — DARK BLUEPRINT OS THEME
-=========================================================== -->
+    /* -----------------------------------------------------------
+       LAYOUT UTILITIES
+    ------------------------------------------------------------*/
+    .container{
+      max-width:1280px;
+      margin:auto;
+      padding:0 24px;
+    }
+    .section{
+      padding:90px 0;
+    }
+    .center{
+      text-align:center;
+    }
 
-<style>
+    /* -----------------------------------------------------------
+       TOP NAVIGATION — ENTERPRISE LEVEL
+    ------------------------------------------------------------*/
+    nav{
+      width:100%;
+      padding:22px 0;
+      background:rgba(0,0,0,0.45);
+      backdrop-filter:blur(14px);
+      position:sticky;
+      top:0;
+      z-index:200;
+      border-bottom:1px solid rgba(56,189,248,0.18);
+    }
+    .nav-shell{
+      max-width:1280px;
+      margin:auto;
+      padding:0 24px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .nav-left{
+      display:flex;
+      flex-direction:column;
+    }
+    .brand-title{
+      font-size:1.25rem;
+      color:#38bdf8;
+      font-weight:600;
+    }
+    .brand-sub{
+      font-size:.78rem;
+      color:#94a3b8;
+      margin-top:-2px;
+    }
 
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+    .nav-links{
+      display:flex;
+      gap:32px;
+    }
+    .nav-links a{
+      padding:10px 18px;
+      border-radius:50px;
+      font-size:.92rem;
+      transition:.25s;
+      color:#cbd5e1;
+    }
+    .nav-links a:hover{
+      background:#1e293b;
+      color:#38bdf8;
+    }
+    .nav-links .active{
+      background:#38bdf8;
+      color:#000;
+      font-weight:600;
+    }
 
-body{
-  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  background:#000814;
-  color:#e2e8f0;
-  overflow-x:hidden;
-}
+    /* -----------------------------------------------------------
+       HERO SECTION
+    ------------------------------------------------------------*/
+    .hero{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:60px;
+      padding-top:120px;
+      padding-bottom:120px;
+    }
 
-a{ text-decoration:none; color:inherit; }
+    .hero-text h1{
+      font-size:2.6rem;
+      color:white;
+      margin-bottom:20px;
+    }
+    .hero-text h2{
+      font-size:1.15rem;
+      color:#38bdf8;
+      margin-bottom:20px;
+      font-weight:500;
+    }
+    .hero-text p{
+      color:#94a3b8;
+      line-height:1.7;
+      font-size:1rem;
+      max-width:560px;
+    }
 
-.shell{
-  width:100%;
-  max-width:1280px;
-  margin:auto;
-  padding:32px 22px;
-}
+    /* Profile image card */
+    .hero-photo{
+      background:#00101f;
+      border:1px solid rgba(148,163,184,0.18);
+      padding:22px;
+      border-radius:22px;
+      width:360px;
+    }
+    .hero-photo img{
+      width:100%;
+      border-radius:16px;
+    }
+    .tag{
+      display:inline-block;
+      background:#0f172a;
+      color:#94a3b8;
+      padding:4px 12px;
+      border-radius:50px;
+      font-size:.78rem;
+      margin-bottom:12px;
+      border:1px solid rgba(148,163,184,0.25);
+    }
 
-/* -----------------------------------------------------------
-   NAVIGATION — EXECUTIVE COMMAND BAR
------------------------------------------------------------ */
-
-header{
-  width:100%;
-  position:sticky;
-  top:0;
-  z-index:100;
-  background:rgba(0,12,28,0.75);
-  backdrop-filter:blur(14px);
-  border-bottom:1px solid rgba(30,58,138,0.35);
-}
-
-.nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:16px 26px;
-  max-width:1280px;
-  margin:auto;
-}
-
-.nav-left{
-  font-size:1.05rem;
-  font-weight:700;
-  color:#38bdf8;
-  letter-spacing:.03em;
-}
-
-.nav-left span{
-  display:block;
-  font-size:.7rem;
-  color:#64748b;
-  margin-top:2px;
-}
-
-.nav-links{
-  display:flex;
-  gap:22px;
-  font-size:.9rem;
-}
-
-.nav-links a{
-  padding:8px 14px;
-  border-radius:999px;
-  transition:.25s;
-  color:#cbd5e1;
-}
-
-.nav-links a:hover{
-  background:rgba(56,189,248,0.15);
-  color:#fff;
-}
-
-.nav-links a.active{
-  background:#38bdf8;
-  color:#001219;
-  font-weight:600;
-}
-
-/* -----------------------------------------------------------
-   HERO PRIME — NATIONAL HEALTH OS INTRO SECTION
------------------------------------------------------------ */
-
-.hero-wrap{
-  margin-top:38px;
-  border-radius:34px;
-  padding:48px;
-  background:linear-gradient(
-      to bottom right,
-      rgba(2,14,34,0.85),
-      rgba(0,9,22,0.92)
-  );
-  border:1px solid rgba(56,189,248,0.35);
-  box-shadow:0 0 120px rgba(0,90,255,0.18);
-}
-
-.hero-grid{
-  display:grid;
-  grid-template-columns:1.4fr 1fr;
-  gap:40px;
-  align-items:center;
-}
-
-.hero-title{
-  font-size:2.9rem;
-  font-weight:800;
-  color:#f8fafc;
-  margin-bottom:10px;
-  letter-spacing:.02em;
-}
-
-.hero-sub{
-  font-size:1.25rem;
-  font-weight:500;
-  color:#7dd3fc;
-  margin-bottom:14px;
-}
-
-.hero-text{
-  font-size:1rem;
-  line-height:1.65;
-  max-width:620px;
-  color:#cbd5e1;
-  margin-bottom:14px;
-}
-
-.hero-meta{
-  margin-top:16px;
-  font-size:.85rem;
-  color:#94a3b8;
-  line-height:1.5;
-}
-
-.hero-photo-wrap{
-  position:relative;
-  border-radius:26px;
-  padding:12px;
-  background:linear-gradient(to bottom,#001122,#000814);
-  border:1px solid rgba(56,189,248,.4);
-}
-
-.hero-photo-inner{
-  overflow:hidden;
-  border-radius:22px;
-  height:100%;
-}
-
-.hero-photo-inner img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-
-.hero-tag{
-  position:absolute;
-  top:16px;
-  left:16px;
-  font-size:.75rem;
-  padding:6px 12px;
-  border-radius:999px;
-  background:rgba(0,20,40,0.85);
-  color:#e2e8f0;
-  border:1px solid rgba(148,163,184,0.6);
-  display:flex;
-  gap:6px;
-  align-items:center;
-}
-
-</style>
-
+  </style>
 </head>
-
 
 <body>
 
-<header>
-  <div class="nav">
+<!-- ============================================================
+     NAVIGATION
+============================================================= -->
+<nav>
+  <div class="nav-shell">
+
     <div class="nav-left">
-      Lohrasbi Architecture Lab
-      <span>National Health Systems · AI Strategy · Crisis Architecture</span>
+      <div class="brand-title">Lohrasbi Architecture Lab</div>
+      <div class="brand-sub">National Health Systems · AI Strategy · Crisis Architecture</div>
     </div>
 
     <div class="nav-links">
@@ -274,1113 +186,959 @@ header{
       <a href="architecture.html">Architecture Lab</a>
       <a href="blueprints.html">Blueprints</a>
       <a href="research.html">Research</a>
-      <a href="research-hub-v2.html">Research Hub v2</a>
       <a href="os-map.html">OS Interactive Map</a>
       <a href="contact.html">Contact</a>
     </div>
-  </div>
-</header>
-
-
-<div class="shell">
-
-<!-- ==========================================================
-     HERO PRIME SECTION
-=========================================================== -->
-
-<section class="hero-wrap">
-  <div class="hero-grid">
-
-    <div>
-      <h1 class="hero-title">Dr. Nader Lohrasbi</h1>
-      <div class="hero-sub">Healthcare Transformation Architect & AI Strategist</div>
-
-      <p class="hero-text">
-        Architecting the next generation of national healthcare: Symbiotic Intelligence,
-        Crisis Architecture, Financial Nervous Systems, and distributed AI-driven hospital ecosystems.
-      </p>
-
-      <div class="hero-meta">
-        Post-DBA (Harvard Medical School – Crisis Management & AI) ·  
-        DBA (Strategic Management) ·  
-        PhD (Medical Physics)
-      </div>
-    </div>
-
-    <div class="hero-photo-wrap">
-      <div class="hero-tag">
-        <i class="fa-solid fa-cube"></i> System Architect
-      </div>
-
-      <div class="hero-photo-inner">
-        <img src="profile.jpg" alt="Dr. Nader Lohrasbi"/>
-      </div>
-    </div>
 
   </div>
+</nav>
+
+
+<!-- ============================================================
+     HERO SECTION — PROFILE + INTRO
+============================================================= -->
+<section class="section container hero">
+
+  <div class="hero-text">
+    <h1>Dr. Nader Lohrasbi</h1>
+
+    <h2>Healthcare Transformation Architect & AI Strategist</h2>
+
+    <p>
+      Architecting the next generation of national healthcare: Symbiotic Intelligence,
+      Crisis Architecture, Financial Nervous Systems, and distributed AI-driven hospital ecosystems.
+      Integrating governance, cognition, prediction, and operational coherence at national scale.
+    </p>
+
+    <p style="margin-top:18px; font-size:.9rem; color:#64748b;">
+      Post-DBA (Harvard Medical School – Crisis Management & AI) · DBA (Strategic Management) · PhD (Medical Physics)
+    </p>
+  </div>
+
+  <div class="hero-photo">
+    <div class="tag">System Architect</div>
+    <img src="profile-main.jpg" alt="Dr. Nader Lohrasbi"/>
+  </div>
+
 </section>
-<!-- ==========================================================
-     STRATEGIC OS OVERVIEW — 3-PILLAR LAYER
-=========================================================== -->
+<!-- ============================================================
+     HERO BLUEPRINT TRIO — THREE PRIMARY ARCHITECTURE CARDS
+============================================================= -->
 
-<section class="os-overview" style="margin-top:70px;">
+<style>
+  .trio-section{
+    margin-top:40px;
+    margin-bottom:40px;
+  }
+  .trio-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:32px;
+  }
+
+  .trio-card{
+    background:#00101f;
+    border:1px solid rgba(148,163,184,0.18);
+    border-radius:22px;
+    overflow:hidden;
+    transition:.35s;
+    cursor:pointer;
+  }
+  .trio-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(56,189,248,0.45);
+    box-shadow:0 8px 28px rgba(56,189,248,0.15);
+  }
+  .trio-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+  }
+  .trio-card-title{
+    padding:18px 22px;
+    color:#e2e8f0;
+    font-size:1.1rem;
+    font-weight:600;
+  }
+</style>
+
+<section class="section container trio-section">
+
+  <h2 class="center" style="font-size:2rem; margin-bottom:12px;">
+    Strategic Architecture Foundations
+  </h2>
+
+  <p class="center" style="color:#94a3b8; max-width:780px; margin:0 auto 48px auto;">
+    Three foundational architectures defining the structural, cognitive, and operational logic
+    behind the Health Nation OS and Symbiotic Intelligence ecosystems.
+  </p>
+
+  <div class="trio-grid">
+
+    <!-- Card 1 -->
+    <a href="architecture.html" class="trio-card">
+      <img src="1Healthcare Transformation Architect.jpg" alt="Healthcare Transformation Architect"/>
+      <div class="trio-card-title">Healthcare Transformation Architect</div>
+    </a>
+
+    <!-- Card 2 -->
+    <a href="bp-02-architecture-over-repair-doctrine.html" class="trio-card">
+      <img src="2Architecture Over Repair.jpg" alt="Architecture Over Repair"/>
+      <div class="trio-card-title">Architecture Over Repair Doctrine</div>
+    </a>
+
+    <!-- Card 3 -->
+    <a href="blueprints.html" class="trio-card">
+      <img src="3Strategic Blueprint Preview.jpg" alt="Strategic Blueprint Library"/>
+      <div class="trio-card-title">Strategic Blueprint Library — Preview</div>
+    </a>
+
+  </div>
+
+</section>
+<!-- ============================================================
+     HEALTH NATION OS — STRATEGIC ARCHITECTURE LAYER
+============================================================= -->
+
+<style>
+  /* Title + subtitle */
+  .section-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:16px;
+  }
+  .section-sub{
+    text-align:center;
+    max-width:820px;
+    margin:0 auto 50px auto;
+    color:#94a3b8;
+    font-size:1.05rem;
+    line-height:1.6;
+  }
+
+  /* Top 3 cards */
+  .hnos-top-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+    margin-bottom:70px;
+  }
+  .hnos-card{
+    background:#00101f;
+    border:1px solid rgba(148,163,184,0.18);
+    padding:28px;
+    border-radius:20px;
+    transition:.3s;
+  }
+  .hnos-card:hover{
+    border-color:rgba(56,189,248,0.35);
+    box-shadow:0 8px 24px rgba(56,189,248,0.12);
+    transform:translateY(-4px);
+  }
+  .hnos-card-title{
+    font-size:1.2rem;
+    font-weight:600;
+    margin-bottom:12px;
+    color:#e2e8f0;
+  }
+  .hnos-card-text{
+    color:#94a3b8;
+    line-height:1.55;
+    font-size:.98rem;
+  }
+
+  /* Five Pillars grid */
+  .pillars-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+  }
+  .pillar-card{
+    background:#00101f;
+    border:1px solid rgba(148,163,184,0.18);
+    padding:26px;
+    border-radius:20px;
+    transition:.3s;
+  }
+  .pillar-card:hover{
+    border-color:rgba(56,189,248,0.35);
+    box-shadow:0 8px 24px rgba(56,189,248,0.12);
+    transform:translateY(-4px);
+  }
+  .pillar-title{
+    font-size:1.15rem;
+    font-weight:600;
+    margin-bottom:10px;
+    color:#e2e8f0;
+  }
+  .pillar-text{
+    color:#94a3b8;
+    line-height:1.55;
+  }
+
+  @media(max-width:960px){
+    .hnos-top-grid, .pillars-grid{
+      grid-template-columns:1fr;
+    }
+  }
+</style>
+
+
+<section class="section container">
+
   <h2 class="section-title">Health Nation OS — Strategic Architecture Layer</h2>
 
-  <p class="section-desc">
+  <p class="section-sub">
     A unified national operating system integrating governance, clinical intelligence,
     crisis resilience, and financial synchronization into one coherent health architecture.
   </p>
 
-  <div class="pillars-grid">
+  <!-- ===== TOP 3 ARCHITECTURE CARDS ===== -->
+  <div class="hnos-top-grid">
 
-    <div class="pillar-card">
-      <i class="fa-solid fa-hexagon-nodes pillar-icon"></i>
-      <h3>Symbiotic Intelligence</h3>
-      <p>
-        Multi-layer AI cognition combining national datasets, clinical reasoning engines,
-        and distributed decision loops across population-scale systems.
-      </p>
+    <div class="hnos-card">
+      <div class="hnos-card-title">Symbiotic Intelligence</div>
+      <div class="hnos-card-text">
+        Multi-layer national cognition combining clinical reasoning engines, national datasets,
+        and distributed decision loops that scale across an entire health ecosystem.
+      </div>
     </div>
 
-    <div class="pillar-card">
-      <i class="fa-solid fa-landmark pillar-icon"></i>
-      <h3>Crisis Architecture</h3>
-      <p>
-        Resilient, stress-tested national infrastructures engineered to preserve continuity,
-        coordination, and operational integrity under extreme events.
-      </p>
+    <div class="hnos-card">
+      <div class="hnos-card-title">Crisis Architecture</div>
+      <div class="hnos-card-text">
+        Stress-tested national infrastructures engineered to preserve continuity, coordination,
+        and operational integrity under extreme system pressures.
+      </div>
     </div>
 
-    <div class="pillar-card">
-      <i class="fa-solid fa-hands-holding-circle pillar-icon"></i>
-      <h3>Antifragile Hospitals</h3>
-      <p>
-        Hospitals designed as adaptive, learning ecosystems — 
-        strengthening under load rather than collapsing from it.
-      </p>
+    <div class="hnos-card">
+      <div class="hnos-card-title">Antifragile Hospitals</div>
+      <div class="hnos-card-text">
+        Learning hospital ecosystems that strengthen under load rather than collapse —
+        forming adaptive, self-correcting clinical environments.
+      </div>
     </div>
 
   </div>
-</section>
 
 
-<!-- ==========================================================
-     STRATEGIC OS OVERVIEW — STYLE BLOCK
-=========================================================== -->
+  <!-- ============================================================
+       FIVE PILLARS OF THE HEALTH NATION OS
+  ============================================================= -->
+  <h2 class="section-title" style="margin-top:40px;">The Five Pillars of a Health Nation OS</h2>
 
-<style>
-
-.section-title{
-  font-size:2.1rem;
-  font-weight:700;
-  margin-bottom:14px;
-  color:#f1f5f9;
-  text-align:center;
-}
-
-.section-desc{
-  text-align:center;
-  max-width:760px;
-  margin:0 auto 46px;
-  color:#94a3b8;
-  font-size:1rem;
-  line-height:1.65;
-}
-
-.pillars-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:32px;
-}
-
-.pillar-card{
-  background:rgba(0,20,50,0.6);
-  padding:28px;
-  border-radius:18px;
-  border:1px solid rgba(56,189,248,0.22);
-  backdrop-filter:blur(12px);
-  transition:.3s;
-  text-align:center;
-}
-
-.pillar-card:hover{
-  background:rgba(0,40,80,0.7);
-  transform:translateY(-4px);
-  border-color:rgba(56,189,248,0.45);
-}
-
-.pillar-icon{
-  font-size:2.4rem;
-  color:#38bdf8;
-  margin-bottom:16px;
-}
-
-.pillar-card h3{
-  font-size:1.25rem;
-  font-weight:600;
-  margin-bottom:10px;
-}
-
-.pillar-card p{
-  font-size:.95rem;
-  color:#cbd5e1;
-  line-height:1.55;
-}
-
-</style>
-
-
-
-<!-- ==========================================================
-     HEALTH NATION OS — FIVE OPERATING PRINCIPLES
-=========================================================== -->
-
-<section class="pillars-section" id="pillars" style="margin-top:110px;">
-  <h2 class="section-title">The Five Pillars of a Health Nation OS</h2>
-  <p class="section-desc">
-    Every architecture deployed across Europe & the Middle East is built on these five 
+  <p class="section-sub" style="margin-bottom:46px;">
+    Every architecture deployed across Europe & the Middle East is built on these five
     non-negotiable operating principles.
   </p>
 
   <div class="pillars-grid">
 
+    <!-- Pillar 1 -->
     <div class="pillar-card">
-      <h3>01 — Structural Coherence</h3>
-      <p>
-        The OS enforces a unified logic across clinical, operational, financial, and regulatory systems,
-        eliminating fragmentation across the ecosystem.
-      </p>
+      <div class="pillar-title">01 — Structural Coherence</div>
+      <div class="pillar-text">
+        A unified logic governing clinical, operational, financial, and regulatory systems —
+        eliminating fragmentation across the national health ecosystem.
+      </div>
     </div>
 
+    <!-- Pillar 2 -->
     <div class="pillar-card">
-      <h3>02 — Elastic Intelligence</h3>
-      <p>
-        Intelligence that expands with load: governance, crisis response, prediction,
-        and clinical reasoning scale together as a single organism.
-      </p>
+      <div class="pillar-title">02 — Elastic Intelligence</div>
+      <div class="pillar-text">
+        Intelligence that expands with load: governance, prediction, crisis management,
+        and clinical reasoning scale as a single organism.
+      </div>
     </div>
 
+    <!-- Pillar 3 -->
     <div class="pillar-card">
-      <h3>03 — Frictionless Interoperability</h3>
-      <p>
-        Data, workflows, and intelligence move without institutional, political, or technological drag.
-        A health nation behaves as one coherent system.
-      </p>
+      <div class="pillar-title">03 — Frictionless Interoperability</div>
+      <div class="pillar-text">
+        Data, workflows, and intelligence move without institutional, political,
+        or technological drag — the entire nation behaves as one coherent system.
+      </div>
     </div>
 
+    <!-- Pillar 4 -->
     <div class="pillar-card">
-      <h3>04 — Predictive Stability</h3>
-      <p>
-        Systems do not react — they anticipate.
-        Bottlenecks, crises, and failures are modeled before they manifest.
-      </p>
+      <div class="pillar-title">04 — Predictive Stability</div>
+      <div class="pillar-text">
+        Systems anticipate rather than react. Bottlenecks, crises, and failures
+        are modeled long before they manifest.
+      </div>
     </div>
 
+    <!-- Pillar 5 -->
     <div class="pillar-card">
-      <h3>05 — Antifragile Evolution</h3>
-      <p>
-        Every disruption becomes a strengthening event.
-        The OS upgrades itself continuously through real-time learning loops.
-      </p>
+      <div class="pillar-title">05 — Antifragile Evolution</div>
+      <div class="pillar-text">
+        Every disruption becomes a strengthening event — the OS upgrades itself
+        continuously through real-time learning loops.
+      </div>
     </div>
 
   </div>
+
 </section>
-
-<style>
-.pillars-section .pillars-grid{
-  margin-top:32px;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:32px;
-}
-
-.pillars-section .pillar-card{
-  background:rgba(0,20,40,0.6);
-  padding:26px;
-  border-radius:18px;
-  border:1px solid rgba(56,189,248,.22);
-  backdrop-filter:blur(10px);
-  transition:.3s;
-}
-
-.pillars-section .pillar-card:hover{
-  background:rgba(0,40,80,0.7);
-  transform:translateY(-4px);
-  border-color:rgba(56,189,248,.45);
-}
-
-.pillars-section h3{
-  font-size:1.2rem;
-  margin-bottom:10px;
-}
-
-.pillars-section p{
-  font-size:.94rem;
-  color:#cbd5e1;
-  line-height:1.55;
-}
-</style>
-<!-- ==========================================================
-     BLUEPRINT STRIP — 30 ARCHITECTURES (AUTO-SCROLL CINEMATIC)
-=========================================================== -->
-
-<section style="margin-top:110px;">
-  <h2 class="section-title">Strategic Blueprint Library</h2>
-  <p class="section-desc">
-    Thirty foundational architectures defining the cognitive, clinical, operational,
-    and infrastructural layers of the Health Nation OS.
-  </p>
-
-  <div class="bp-strip">
-
-    <!-- 01 -->
-    <div class="bp-item">
-      <img src="bp-01.jpg" alt="Blueprint 01"/>
-      <span>Health Nation OS</span>
-    </div>
-
-    <!-- 02 -->
-    <div class="bp-item">
-      <img src="bp-02.jpg" alt="Blueprint 02"/>
-      <span>Architecture Over Repair</span>
-    </div>
-
-    <!-- 03 -->
-    <div class="bp-item">
-      <img src="bp-03.jpg" alt="Blueprint 03"/>
-      <span>Crisis Architecture Framework</span>
-    </div>
-
-    <!-- 04 -->
-    <div class="bp-item">
-      <img src="bp-04.jpg" alt="Blueprint 04"/>
-      <span>Symbiotic Intelligence Engine</span>
-    </div>
-
-    <!-- 05 -->
-    <div class="bp-item">
-      <img src="bp-05.jpg" alt="Blueprint 05"/>
-      <span>Autonomous Care Pathways</span>
-    </div>
-
-    <!-- 06 -->
-    <div class="bp-item">
-      <img src="bp-06.jpg" alt="Blueprint 06"/>
-      <span>Secure Global Data Fabric</span>
-    </div>
-
-    <!-- 07 -->
-    <div class="bp-item">
-      <img src="bp-07.jpg" alt="Blueprint 07"/>
-      <span>AI-Augmented Clinical Workflow</span>
-    </div>
-
-    <!-- 08 -->
-    <div class="bp-item">
-      <img src="bp-08.jpg" alt="Blueprint 08"/>
-      <span>Predictive Crisis Readiness</span>
-    </div>
-
-    <!-- 09 -->
-    <div class="bp-item">
-      <img src="bp-09.jpg" alt="Blueprint 09"/>
-      <span>National Health Command Grid</span>
-    </div>
-
-    <!-- 10 -->
-    <div class="bp-item">
-      <img src="bp-10.jpg" alt="Blueprint 10"/>
-      <span>Interoperability Core Architecture</span>
-    </div>
-
-    <!-- 11 -->
-    <div class="bp-item">
-      <img src="bp-11.jpg" alt="Blueprint 11"/>
-      <span>Patient Journey OS Timeline</span>
-    </div>
-
-    <!-- 12 -->
-    <div class="bp-item">
-      <img src="bp-12.jpg" alt="Blueprint 12"/>
-      <span>Healthcare Infinity Loop</span>
-    </div>
-
-    <!-- 13 -->
-    <div class="bp-item">
-      <img src="bp-13.jpg" alt="Blueprint 13"/>
-      <span>Zero Trust Medical Vault</span>
-    </div>
-
-    <!-- 14 -->
-    <div class="bp-item">
-      <img src="bp-14.jpg" alt="Blueprint 14"/>
-      <span>AI Mental Health Co-Pilot</span>
-    </div>
-
-    <!-- 15 -->
-    <div class="bp-item">
-      <img src="bp-15.jpg" alt="Blueprint 15"/>
-      <span>AI-Driven Health System Nervous Grid</span>
-    </div>
-
-    <!-- 16 -->
-    <div class="bp-item">
-      <img src="bp-16.jpg" alt="Blueprint 16"/>
-      <span>Clinical Simulation Intelligence Lab</span>
-    </div>
-
-    <!-- 17 -->
-    <div class="bp-item">
-      <img src="bp-17.jpg" alt="Blueprint 17"/>
-      <span>National Health Flow OS</span>
-    </div>
-
-    <!-- 18 -->
-    <div class="bp-item">
-      <img src="bp-18.jpg" alt="Blueprint 18"/>
-      <span>Quantum-Safe Emergency Channel</span>
-    </div>
-
-    <!-- 19 -->
-    <div class="bp-item">
-      <img src="bp-19.jpg" alt="Blueprint 19"/>
-      <span>AI Behavioral Puzzle Engine</span>
-    </div>
-
-    <!-- 20 -->
-    <div class="bp-item">
-      <img src="bp-20.jpg" alt="Blueprint 20"/>
-      <span>Autonomous Clinical Edge Compute</span>
-    </div>
-
-    <!-- 21 -->
-    <div class="bp-item">
-      <img src="bp-21.jpg" alt="Blueprint 21"/>
-      <span>National Smart-City Care Grid</span>
-    </div>
-
-    <!-- 22 -->
-    <div class="bp-item">
-      <img src="bp-22.jpg" alt="Blueprint 22"/>
-      <span>Anticipatory Emergency Deployment</span>
-    </div>
-
-    <!-- 23 -->
-    <div class="bp-item">
-      <img src="bp-23.jpg" alt="Blueprint 23"/>
-      <span>Pharmaceutical Spine Network</span>
-    </div>
-
-    <!-- 24 -->
-    <div class="bp-item">
-      <img src="bp-24.jpg" alt="Blueprint 24"/>
-      <span>AI-Powered Community Micro-Clinics</span>
-    </div>
-
-    <!-- 25 -->
-    <div class="bp-item">
-      <img src="bp-25.jpg" alt="Blueprint 25"/>
-      <span>Seamless Global Care Pathway</span>
-    </div>
-
-    <!-- 26 -->
-    <div class="bp-item">
-      <img src="bp-26.jpg" alt="Blueprint 26"/>
-      <span>Family Recovery Monitoring Hub</span>
-    </div>
-
-    <!-- 27 -->
-    <div class="bp-item">
-      <img src="bp-27.jpg" alt="Blueprint 27"/>
-      <span>Daily Adherence Companion</span>
-    </div>
-
-    <!-- 28 -->
-    <div class="bp-item">
-      <img src="bp-28.jpg" alt="Blueprint 28"/>
-      <span>Health Equity Modeling Engine</span>
-    </div>
-
-    <!-- 29 -->
-    <div class="bp-item">
-      <img src="bp-29.jpg" alt="Blueprint 29"/>
-      <span>National Capacity Exchange</span>
-    </div>
-
-    <!-- 30 -->
-    <div class="bp-item">
-      <img src="bp-30.jpg" alt="Blueprint 30"/>
-      <span>Quantum-Safe Telemedicine Channel</span>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ==========================================================
-     AUTO-SCROLL CINEMATIC STRIP — STYLE
-=========================================================== -->
+<!-- ============================================================
+     STRATEGIC BLUEPRINT LIBRARY — FULL 30-MODULE GRID
+============================================================= -->
 
 <style>
 
-.bp-strip{
-  margin-top:40px;
-  display:flex;
-  gap:22px;
-  overflow-x:auto;
-  padding-bottom:16px;
-  scroll-snap-type:x mandatory;
-  -webkit-overflow-scrolling:touch;
-}
+  .bp-section-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:14px;
+  }
 
-.bp-strip::-webkit-scrollbar{
-  height:6px;
-}
+  .bp-section-sub{
+    text-align:center;
+    max-width:780px;
+    margin:0 auto 54px auto;
+    color:#94a3b8;
+    font-size:1.05rem;
+    line-height:1.6;
+  }
 
-.bp-strip::-webkit-scrollbar-thumb{
-  background:#334155;
-  border-radius:6px;
-}
+  .bp-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:30px;
+  }
 
-.bp-item{
-  min-width:210px;
-  height:210px;
-  scroll-snap-align:start;
-  border-radius:18px;
-  overflow:hidden;
-  border:1px solid rgba(56,189,248,.22);
-  position:relative;
-  background:#00111f;
-  transition:.3s;
-}
+  .bp-card{
+    background:#00101f;
+    border:1px solid rgba(148,163,184,0.18);
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
+    cursor:pointer;
+  }
+  .bp-card:hover{
+    transform:translateY(-4px);
+    border-color:rgba(56,189,248,0.45);
+    box-shadow:0 10px 28px rgba(56,189,248,0.18);
+  }
 
-.bp-item img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  opacity:.85;
-  transition:.3s;
-}
+  .bp-card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+  }
 
-.bp-item:hover img{
-  opacity:1;
-  transform:scale(1.05);
-}
+  .bp-card-title{
+    padding:14px 18px;
+    font-size:.95rem;
+    font-weight:600;
+    color:#e2e8f0;
+    height:60px;
+    line-height:1.35;
+  }
 
-.bp-item span{
-  position:absolute;
-  bottom:0;
-  left:0;
-  right:0;
-  padding:8px 10px;
-  background:rgba(0,20,40,0.7);
-  font-size:.8rem;
-  text-align:center;
-  color:#e2e8f0;
-}
+  @media(max-width:1280px){
+    .bp-grid{
+      grid-template-columns:repeat(4,1fr);
+    }
+  }
+  @media(max-width:960px){
+    .bp-grid{
+      grid-template-columns:repeat(3,1fr);
+    }
+  }
+  @media(max-width:700px){
+    .bp-grid{
+      grid-template-columns:repeat(2,1fr);
+    }
+  }
+  @media(max-width:480px){
+    .bp-grid{
+      grid-template-columns:1fr;
+    }
+  }
+
 </style>
-<!-- ==========================================================
-     BLUEPRINT GRID — FULL 30 MODULE GRID
-=========================================================== -->
 
-<section style="margin-top:90px;">
-  <h2 class="section-title">Blueprint Library — Full 30-Module Grid</h2>
-  <p class="section-desc">
-    All 30 architecture modules forming the structural backbone of the Health Nation OS.
+
+
+<section class="section container">
+
+  <h2 class="bp-section-title">Strategic Blueprint Library</h2>
+
+  <p class="bp-section-sub">
+    Thirty foundational architectures defining the cognitive, clinical, operational, and infrastructural
+    layers of the Health Nation OS.
   </p>
 
   <div class="bp-grid">
 
-    <!-- 01 -->
-    <div class="bp-cell">
-      <img src="bp-01.jpg" alt="Blueprint 01">
-      <span>Health Nation OS</span>
-    </div>
+    <!-- ============================================================
+         BLUEPRINT CARDS 1–10
+    ============================================================= -->
+    
+    <a href="bp-01-health-nation-os.html" class="bp-card">
+      <img src="bp-01.jpg" alt="Health Nation OS"/>
+      <div class="bp-card-title">Symbiotic Intelligence Command Center</div>
+    </a>
 
-    <!-- 02 -->
-    <div class="bp-cell">
-      <img src="bp-02.jpg" alt="Blueprint 02">
-      <span>Architecture Over Repair</span>
-    </div>
+    <a href="bp-02-architecture-over-repair.html" class="bp-card">
+      <img src="bp-02.jpg" alt="Architecture Over Repair"/>
+      <div class="bp-card-title">Architecture Over Repair Doctrine</div>
+    </a>
 
-    <!-- 03 -->
-    <div class="bp-cell">
-      <img src="bp-03.jpg" alt="Blueprint 03">
-      <span>Crisis Architecture Framework</span>
-    </div>
+    <a href="bp-03-crisis-architecture-framework.html" class="bp-card">
+      <img src="bp-03.jpg" alt="System Integrity Dome"/>
+      <div class="bp-card-title">System Integrity Dome</div>
+    </a>
 
-    <!-- 04 -->
-    <div class="bp-cell">
-      <img src="bp-04.jpg" alt="Blueprint 04">
-      <span>Symbiotic Intelligence Engine</span>
-    </div>
+    <a href="bp-04-strategic-control-tower.html" class="bp-card">
+      <img src="bp-04.jpg" alt="Predictive Emergency Mobility Network"/>
+      <div class="bp-card-title">Predictive Emergency Mobility Network</div>
+    </a>
 
-    <!-- 05 -->
-    <div class="bp-cell">
-      <img src="bp-05.jpg" alt="Blueprint 05">
-      <span>Autonomous Care Pathways</span>
-    </div>
+    <a href="bp-05-clinical-efficiency-paradox.html" class="bp-card">
+      <img src="bp-05.jpg" alt="Clinical Efficiency Paradox"/>
+      <div class="bp-card-title">Clinical Efficiency Paradox</div>
+    </a>
 
-    <!-- 06 -->
-    <div class="bp-cell">
-      <img src="bp-06.jpg" alt="Blueprint 06">
-      <span>Secure Global Data Fabric</span>
-    </div>
+    <a href="bp-06-ai-governance-model.html" class="bp-card">
+      <img src="bp-06.jpg" alt="AI Governance Model"/>
+      <div class="bp-card-title">12-Layer AI Governance Model</div>
+    </a>
 
-    <!-- 07 -->
-    <div class="bp-cell">
-      <img src="bp-07.jpg" alt="Blueprint 07">
-      <span>AI-Augmented Clinical Workflow</span>
-    </div>
+    <a href="bp-07-macro-micro-alignment.html" class="bp-card">
+      <img src="bp-07.jpg" alt="Federated Clinical Reasoning Engine"/>
+      <div class="bp-card-title">Federated Clinical Reasoning Engine</div>
+    </a>
 
-    <!-- 08 -->
-    <div class="bp-cell">
-      <img src="bp-08.jpg" alt="Blueprint 08">
-      <span>Predictive Crisis Readiness</span>
-    </div>
+    <a href="bp-08-financial-nervous-system.html" class="bp-card">
+      <img src="bp-08.jpg" alt="Financial Nervous System"/>
+      <div class="bp-card-title">Financial Nervous System</div>
+    </a>
 
-    <!-- 09 -->
-    <div class="bp-cell">
-      <img src="bp-09.jpg" alt="Blueprint 09">
-      <span>National Health Command Grid</span>
-    </div>
+    <a href="bp-09-distributed-care-city.html" class="bp-card">
+      <img src="bp-09.jpg" alt="Distributed Diagnostic Grid"/>
+      <div class="bp-card-title">Distributed Diagnostic Grid</div>
+    </a>
 
-    <!-- 10 -->
-    <div class="bp-cell">
-      <img src="bp-10.jpg" alt="Blueprint 10">
-      <span>Interoperability Core Architecture</span>
-    </div>
+    <a href="bp-10-intelligent-workforce-orchestration.html" class="bp-card">
+      <img src="bp-10.jpg" alt="Intelligent Workforce Orchestration"/>
+      <div class="bp-card-title">Intelligent Workforce Orchestration</div>
+    </a>
 
-    <!-- 11 -->
-    <div class="bp-cell">
-      <img src="bp-11.jpg" alt="Blueprint 11">
-      <span>Patient Journey OS Timeline</span>
-    </div>
 
-    <!-- 12 -->
-    <div class="bp-cell">
-      <img src="bp-12.jpg" alt="Blueprint 12">
-      <span>Healthcare Infinity Loop</span>
-    </div>
+    <!-- ============================================================
+         BLUEPRINT CARDS 11–20
+    ============================================================= -->
 
-    <!-- 13 -->
-    <div class="bp-cell">
-      <img src="bp-13.jpg" alt="Blueprint 13">
-      <span>Zero Trust Medical Vault</span>
-    </div>
+    <a href="bp-11-artificial-soul-framework.html" class="bp-card">
+      <img src="bp-11.jpg" alt="Artificial Soul Framework"/>
+      <div class="bp-card-title">Artificial Soul Framework</div>
+    </a>
 
-    <!-- 14 -->
-    <div class="bp-cell">
-      <img src="bp-14.jpg" alt="Blueprint 14">
-      <span>AI Mental Health Co-Pilot</span>
-    </div>
+    <a href="bp-12-bespoke-ai-assistant.html" class="bp-card">
+      <img src="bp-12.jpg" alt="Bespoke AI Assistant"/>
+      <div class="bp-card-title">Bespoke AI Assistant</div>
+    </a>
 
-    <!-- 15 -->
-    <div class="bp-cell">
-      <img src="bp-15.jpg" alt="Blueprint 15">
-      <span>AI-Driven Health System Nervous Grid</span>
-    </div>
+    <a href="bp-13-federated-clinical-reasoning-engine.html" class="bp-card">
+      <img src="bp-13.jpg" alt="Federated Clinical Reasoning Engine"/>
+      <div class="bp-card-title">Federated Reasoning — Advanced Layer</div>
+    </a>
 
-    <!-- 16 -->
-    <div class="bp-cell">
-      <img src="bp-16.jpg" alt="Blueprint 16">
-      <span>Clinical Simulation Intelligence Lab</span>
-    </div>
+    <a href="bp-14-multi-agent-care-workflow-ai.html" class="bp-card">
+      <img src="bp-14.jpg" alt="Multi-Agent Care Workflow AI"/>
+      <div class="bp-card-title">Multi-Agent Care Workflow AI</div>
+    </a>
 
-    <!-- 17 -->
-    <div class="bp-cell">
-      <img src="bp-17.jpg" alt="Blueprint 17">
-      <span>National Health Flow OS</span>
-    </div>
+    <a href="bp-15-medical-nlp-pipeline-for-global-interoperability.html" class="bp-card">
+      <img src="bp-15.jpg" alt="Medical NLP Interoperability"/>
+      <div class="bp-card-title">Medical NLP Interoperability Pipeline</div>
+    </a>
 
-    <!-- 18 -->
-    <div class="bp-cell">
-      <img src="bp-18.jpg" alt="Blueprint 18">
-      <span>Quantum-Safe Emergency Channel</span>
-    </div>
+    <a href="bp-16-ai-empowered-clinical-simulation-lab.html" class="bp-card">
+      <img src="bp-16.jpg" alt="Predictive Patient Journey Engine"/>
+      <div class="bp-card-title">Predictive Patient Journey Engine</div>
+    </a>
 
-    <!-- 19 -->
-    <div class="bp-cell">
-      <img src="bp-19.jpg" alt="Blueprint 19">
-      <span>AI Behavioral Puzzle Engine</span>
-    </div>
+    <a href="bp-17-national-digital-twin-for-healthcare.html" class="bp-card">
+      <img src="bp-17.jpg" alt="Autonomous Hospital Control Loop"/>
+      <div class="bp-card-title">Autonomous Hospital Control Loop</div>
+    </a>
 
-    <!-- 20 -->
-    <div class="bp-cell">
-      <img src="bp-20.jpg" alt="Blueprint 20">
-      <span>Autonomous Clinical Edge Compute</span>
-    </div>
+    <a href="bp-18.jpg" class="bp-card">
+      <img src="bp-18.jpg" alt="Zero-Trust AI Health Exchange"/>
+      <div class="bp-card-title">Zero-Trust AI Health Exchange</div>
+    </a>
 
-    <!-- 21 -->
-    <div class="bp-cell">
-      <img src="bp-21.jpg" alt="Blueprint 21">
-      <span>National Smart-City Care Grid</span>
-    </div>
+    <a href="bp-19-clinical-cognition-ai-layer.html" class="bp-card">
+      <img src="bp-19.jpg" alt="Medical Preference Learning Engine"/>
+      <div class="bp-card-title">Medical Preference Learning Engine</div>
+    </a>
 
-    <!-- 22 -->
-    <div class="bp-cell">
-      <img src="bp-22.jpg" alt="Blueprint 22">
-      <span>Anticipatory Emergency Deployment</span>
-    </div>
+    <a href="bp-20-continuous-national-learning-health-model.html" class="bp-card">
+      <img src="bp-20.jpg" alt="Hybrid On-Device Clinical AI"/>
+      <div class="bp-card-title">Hybrid On-Device Clinical AI</div>
+    </a>
 
-    <!-- 23 -->
-    <div class="bp-cell">
-      <img src="bp-23.jpg" alt="Blueprint 23">
-      <span>Pharmaceutical Spine Network</span>
-    </div>
 
-    <!-- 24 -->
-    <div class="bp-cell">
-      <img src="bp-24.jpg" alt="Blueprint 24">
-      <span>AI-Powered Community Micro-Clinics</span>
-    </div>
+    <!-- ============================================================
+         BLUEPRINT CARDS 21–30
+    ============================================================= -->
 
-    <!-- 25 -->
-    <div class="bp-cell">
-      <img src="bp-25.jpg" alt="Blueprint 25">
-      <span>Seamless Global Care Pathway</span>
-    </div>
+    <a href="bp-21-self-healing-health-infrastructure.html" class="bp-card">
+      <img src="bp-21.jpg" alt="50% Urban Traffic Reduction Model"/>
+      <div class="bp-card-title">50% Urban Traffic Reduction Model</div>
+    </a>
 
-    <!-- 26 -->
-    <div class="bp-cell">
-      <img src="bp-26.jpg" alt="Blueprint 26">
-      <span>Family Recovery Monitoring Hub</span>
-    </div>
+    <a href="bp-22-health-system-operational-neural-mesh.html" class="bp-card">
+      <img src="bp-22.jpg" alt="Predictive Emergency Mobility — Advanced"/>
+      <div class="bp-card-title">Predictive Emergency Mobility — Advanced</div>
+    </a>
 
-    <!-- 27 -->
-    <div class="bp-cell">
-      <img src="bp-27.jpg" alt="Blueprint 27">
-      <span>Daily Adherence Companion</span>
-    </div>
+    <a href="bp-23-autonomous-health-supply-chain-grid.html" class="bp-card">
+      <img src="bp-23.jpg" alt="National Health Logistic Spine"/>
+      <div class="bp-card-title">National Health Logistic Spine</div>
+    </a>
 
-    <!-- 28 -->
-    <div class="bp-cell">
-      <img src="bp-28.jpg" alt="Blueprint 28">
-      <span>Health Equity Modeling Engine</span>
-    </div>
+    <a href="bp-24-intelligent-health-transportation-network.html" class="bp-card">
+      <img src="bp-24.jpg" alt="Distributed Diagnostic Grid — Advanced"/>
+      <div class="bp-card-title">Distributed Diagnostic Grid — Advanced</div>
+    </a>
 
-    <!-- 29 -->
-    <div class="bp-cell">
-      <img src="bp-29.jpg" alt="Blueprint 29">
-      <span>National Capacity Exchange</span>
-    </div>
+    <a href="bp-25-national-health-resilience-index.html" class="bp-card">
+      <img src="bp-25.jpg" alt="Smart Travel-to-Treatment Corridor"/>
+      <div class="bp-card-title">Smart Travel-to-Treatment Corridor</div>
+    </a>
 
-    <!-- 30 -->
-    <div class="bp-cell">
-      <img src="bp-30.jpg" alt="Blueprint 30">
-      <span>Quantum-Safe Telemedicine Channel</span>
+    <a href="bp-26-dynamic-waiting-room-elimination-system.html" class="bp-card">
+      <img src="bp-26.jpg" alt="Patient-Family Experience Ecosystem"/>
+      <div class="bp-card-title">Patient-Family Experience Ecosystem</div>
+    </a>
+
+    <a href="bp-27-clinical-capacity-forecasting-grid.html" class="bp-card">
+      <img src="bp-27.jpg" alt="Intelligent Recovery Network"/>
+      <div class="bp-card-title">Intelligent Recovery Network</div>
+    </a>
+
+    <a href="bp-28-national-health-mission-control.html" class="bp-card">
+      <img src="bp-28.jpg" alt="Health Equity Heatmap Engine"/>
+      <div class="bp-card-title">Health Equity Heatmap Engine</div>
+    </a>
+
+    <a href="bp-29-national-health-operating-system-kernel.html" class="bp-card">
+      <img src="bp-29.jpg" alt="National Surgical Capacity Marketplace"/>
+      <div class="bp-card-title">National Surgical Capacity Marketplace</div>
+    </a>
+
+    <a href="bp-30-health-nation-digital-twin.html" class="bp-card">
+      <img src="bp-30.jpg" alt="Ultra-Secure Telehealth Architecture"/>
+      <div class="bp-card-title">Ultra-Secure Telehealth Architecture</div>
+    </a>
+
+  </div>
+
+</section>
+<!-- ============================================================
+     META ARCHITECTURE SUMMARY (IMAGE REMOVED)
+============================================================= -->
+
+<style>
+  .meta-block{
+    background:#00101f;
+    border:1px solid rgba(56,189,248,.22);
+    border-radius:22px;
+    padding:42px;
+    margin-top:80px;
+    margin-bottom:120px;
+  }
+  .meta-title{
+    font-size:1.8rem;
+    color:#38bdf8;
+    margin-bottom:18px;
+    text-align:center;
+  }
+  .meta-text{
+    color:#94a3b8;
+    line-height:1.7;
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+  }
+  .meta-link{
+    display:inline-block;
+    margin-top:24px;
+    padding:12px 28px;
+    border:1px solid #38bdf8;
+    border-radius:10px;
+    color:#38bdf8;
+    transition:.3s;
+    font-size:.95rem;
+  }
+  .meta-link:hover{
+    background:#38bdf8;
+    color:#000;
+  }
+</style>
+
+
+<section class="container section">
+
+  <div class="meta-block">
+
+    <h2 class="meta-title">National Health Meta-Architecture</h2>
+
+    <p class="meta-text">
+      The Health Nation OS is structured as an adaptive, multi-layer architecture integrating intelligence,
+      crisis resilience, operational stability, clinical prediction, decentralised diagnostics, and
+      zero-trust interoperability.  
+      <br><br>
+      This summary replaces the large visual map and provides a conceptual foundation.  
+      The full interactive version is available in the dedicated OS Map interface.
+    </p>
+
+    <div class="center">
+      <a href="os-map.html" class="meta-link">View OS Interactive Map</a>
     </div>
 
   </div>
+
 </section>
 
 
-<!-- ==========================================================
-     GRID STYLE
-=========================================================== -->
+
+<!-- ============================================================
+     DIGITAL FORTRESS — THE 12-PLATFORM NETWORK
+============================================================= -->
 
 <style>
-.bp-grid{
-  margin-top:40px;
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:25px;
-}
+  .df-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:14px;
+  }
 
-.bp-cell{
-  background:rgba(0,20,40,0.6);
-  border-radius:18px;
-  overflow:hidden;
-  border:1px solid rgba(56,189,248,.22);
-  text-align:center;
-  padding:0;
-  transition:.3s;
-}
+  .df-sub{
+    color:#94a3b8;
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 54px auto;
+  }
 
-.bp-cell:hover{
-  background:rgba(0,40,80,0.7);
-  transform:translateY(-3px);
-  border-color:rgba(56,189,248,.45);
-}
+  .df-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+  }
 
-.bp-cell img{
-  width:100%;
-  height:160px;
-  object-fit:cover;
-  display:block;
-}
+  .df-card{
+    background:#00101f;
+    border:1px solid rgba(148,163,184,0.18);
+    padding:26px;
+    border-radius:20px;
+    transition:.3s;
+  }
+  .df-card:hover{
+    border-color:#38bdf8;
+    transform:translateY(-4px);
+    box-shadow:0 8px 24px rgba(56,189,248,.15);
+  }
+  .df-card h4{
+    color:#38bdf8;
+    margin-bottom:8px;
+    font-size:1rem;
+  }
+  .df-card a{
+    display:block;
+    margin-bottom:6px;
+    color:#94a3b8;
+    font-size:.9rem;
+    transition:.3s;
+  }
+  .df-card a:hover{
+    color:#7dd3fc;
+  }
 
-.bp-cell span{
-  display:block;
-  padding:10px;
-  font-size:.85rem;
-  color:#e2e8f0;
-  background:rgba(0,15,30,0.8);
-}
+  @media(max-width:1000px){
+    .df-grid{
+      grid-template-columns:repeat(2,1fr);
+    }
+  }
+  @media(max-width:600px){
+    .df-grid{
+      grid-template-columns:1fr;
+    }
+  }
+
 </style>
-<!-- ==========================================================
-     HEALTH NATION OS — META MAP (OVERVIEW)
-=========================================================== -->
 
-<section class="os-map" id="os-map" style="margin-top:110px;">
-  <h2 class="section-title">Health Nation OS — Meta Architecture Map</h2>
-  <p class="section-sub">
-    A unified map connecting all 30 blueprint modules into one coherent national health operating system.
-    This visual layer demonstrates how intelligence, clinical workflows, emergency mobility, logistics,
-    governance, and patient ecosystems interlock.
+
+<section class="container section">
+
+  <h2 class="df-title">Digital Fortress</h2>
+  <p class="df-sub">
+    A 12-platform distributed knowledge architecture ensuring long-term visibility, academic integrity,
+    citation dominance, and global search resilience.
   </p>
 
-  <div class="os-map-container">
-    <img src="bp-01.jpg" alt="National OS Map" class="os-map-img"/>
+  <div class="df-grid">
+
+    <div class="df-card">
+      <h4>Academic & Research</h4>
+      <a href="https://orcid.org/0009-0004-4232-2953" target="_blank">ORCID</a>
+      <a href="https://scholar.google.com/citations?user=sz_EXuAAAAAJ" target="_blank">Google Scholar</a>
+      <a href="https://papers.ssrn.com/" target="_blank">SSRN</a>
+      <a href="https://zenodo.org" target="_blank">Zenodo</a>
+      <a href="https://figshare.com" target="_blank">Figshare</a>
+    </div>
+
+    <div class="df-card">
+      <h4>Professional & Executive</h4>
+      <a href="https://www.linkedin.com/in/nader-lohrasbi" target="_blank">LinkedIn</a>
+      <a href="https://drlohrasbi.substack.com" target="_blank">Substack</a>
+      <a href="https://issuu.com/drnaderlohrasbi" target="_blank">Issuu</a>
+      <a href="https://www.slideshare.net/DrNaderLohrasbi" target="_blank">SlideShare</a>
+    </div>
+
+    <div class="df-card">
+      <h4>Technical & Codebase</h4>
+      <a href="https://github.com/DrNaderLohrasbi" target="_blank">GitHub</a>
+      <a href="https://lohrasbi.info" target="_blank">Website</a>
+    </div>
+
+    <div class="df-card">
+      <h4>Knowledge Distribution</h4>
+      <a href="blueprints.html">Blueprint Library</a>
+      <a href="research.html">Research Hub</a>
+      <a href="os-map.html">OS Interactive Map</a>
+      <a href="contact.html">Collaborations</a>
+    </div>
+
   </div>
 
-  <p class="map-note">
-    *A full interactive OS-Map module will be deployed in the next release.*
-  </p>
 </section>
 
+
+
+<!-- ============================================================
+     PUBLICATIONS — EXECUTIVE KNOWLEDGE SERIES
+============================================================= -->
+
 <style>
-.os-map-container{
-  width:100%;
-  max-width:1080px;
-  margin:40px auto;
-  border-radius:22px;
-  overflow:hidden;
-  border:1px solid rgba(56,189,248,.28);
-  background:#00111f;
-}
 
-.os-map-img{
-  width:100%;
-  display:block;
-  object-fit:cover;
-  opacity:.9;
-  transition:.3s;
-}
+  .pub-title{
+    font-size:2rem;
+    text-align:center;
+    margin-bottom:14px;
+  }
 
-.os-map-img:hover{
-  opacity:1;
-  transform:scale(1.01);
-}
+  .pub-sub{
+    text-align:center;
+    color:#94a3b8;
+    margin-bottom:54px;
+    max-width:780px;
+    margin-left:auto;
+    margin-right:auto;
+  }
 
-.map-note{
-  text-align:center;
-  margin-top:10px;
-  color:#64748b;
-  font-size:.85rem;
-}
+  .pub-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+  }
+
+  .pub-card{
+    background:#00101f;
+    border:1px solid rgba(148,163,184,.18);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+  }
+  .pub-card:hover{
+    border-color:#38bdf8;
+    transform:translateY(-4px);
+    box-shadow:0 8px 24px rgba(56,189,248,.15);
+  }
+  .pub-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+  }
+  .pub-card-title{
+    padding:18px;
+    color:#e2e8f0;
+    font-weight:600;
+    font-size:1rem;
+  }
+
+  @media(max-width:900px){
+    .pub-grid{
+      grid-template-columns:1fr;
+    }
+  }
+
 </style>
 
 
+<section class="container section">
 
-
-<!-- ==========================================================
-     DIGITAL FORTRESS — 12 PLATFORM MATRIX
-=========================================================== -->
-
-<section id="digital-fortress" class="digital-fortress-section" style="margin-top:120px;">
-  <h2 class="section-title">Digital Fortress</h2>
-  <p class="section-sub">
-    A coordinated multi-platform strategy designed for global search dominance.
-    Each platform acts as a bunker within your Digital Fortress — all synchronized,
-    all pointing back to your sovereign domain: <b>lohrasbi.info</b>.
-  </p>
-
-  <div class="fortress-grid">
-
-    <a class="fort-card" href="https://www.linkedin.com/in/nader-lohrasbi" target="_blank">
-      <i class="fa-brands fa-linkedin"></i>
-      <h3>LinkedIn</h3>
-      <p>Executive content, strategic briefs, and public thought leadership.</p>
-    </a>
-
-    <a class="fort-card" href="https://orcid.org/0009-0004-4232-2953" target="_blank">
-      <i class="fa-solid fa-id-badge"></i>
-      <h3>ORCID</h3>
-      <p>Research identity and scholarly indexing.</p>
-    </a>
-
-    <a class="fort-card" href="https://scholar.google.com/citations?user=sz_EXuAAAAAJ" target="_blank">
-      <i class="fa-solid fa-graduation-cap"></i>
-      <h3>Google Scholar</h3>
-      <p>Citation ecosystem and academic footprint.</p>
-    </a>
-
-    <a class="fort-card" href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=9241472" target="_blank">
-      <i class="fa-solid fa-scroll"></i>
-      <h3>SSRN</h3>
-      <p>Working papers, frameworks, and policy architectures.</p>
-    </a>
-
-    <a class="fort-card" href="https://zenodo.org/search?q=Nader%20Lohrasbi" target="_blank">
-      <i class="fa-solid fa-database"></i>
-      <h3>Zenodo</h3>
-      <p>DOI-based archival repository.</p>
-    </a>
-
-    <a class="fort-card" href="https://figshare.com/authors/Nader_Lohrasbi/22668938" target="_blank">
-      <i class="fa-solid fa-chart-network"></i>
-      <h3>Figshare</h3>
-      <p>High-resolution architecture diagrams & datasets.</p>
-    </a>
-
-    <a class="fort-card" href="https://hms-harvard.academia.edu/NaderLohrasbi" target="_blank">
-      <i class="fa-solid fa-building-columns"></i>
-      <h3>Academia.edu</h3>
-      <p>Academic publications and extended essays.</p>
-    </a>
-
-    <a class="fort-card" href="https://drlohrasbi.substack.com" target="_blank">
-      <i class="fa-solid fa-feather"></i>
-      <h3>Substack</h3>
-      <p>Analytical essays and architecture narratives.</p>
-    </a>
-
-    <a class="fort-card" href="https://www.slideshare.net/DrNaderLohrasbi" target="_blank">
-      <i class="fa-solid fa-presentation-screen"></i>
-      <h3>SlideShare</h3>
-      <p>Model presentations and system diagrams.</p>
-    </a>
-
-    <a class="fort-card" href="https://issuu.com/drnaderlohrasbi" target="_blank">
-      <i class="fa-solid fa-book"></i>
-      <h3>Issuu</h3>
-      <p>Whitepapers and architecture documents.</p>
-    </a>
-
-    <a class="fort-card" href="https://github.com/DrNaderLohrasbi" target="_blank">
-      <i class="fa-brands fa-github"></i>
-      <h3>GitHub</h3>
-      <p>Source files, OS diagrams, and repositories.</p>
-    </a>
-
-    <a class="fort-card" href="https://lohrasbi.info" target="_blank">
-      <i class="fa-solid fa-globe"></i>
-      <h3>Primary Domain</h3>
-      <p>The command center of the Digital Fortress.</p>
-    </a>
-
-  </div> <!-- fortress-grid -->
-</section>
-
-<style>
-.digital-fortress-section .fortress-grid{
-  margin-top:50px;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:28px;
-}
-
-.fort-card{
-  background:rgba(0,20,40,0.6);
-  padding:24px;
-  border-radius:20px;
-  border:1px solid rgba(56,189,248,.22);
-  backdrop-filter:blur(12px);
-  transition:.3s;
-  color:#e2e8f0;
-}
-
-.fort-card:hover{
-  background:rgba(0,40,80,0.7);
-  transform:translateY(-4px);
-  border-color:rgba(56,189,248,0.4);
-}
-
-.fort-card i{
-  font-size:2rem;
-  color:#38bdf8;
-  margin-bottom:14px;
-}
-
-.fort-card h3{
-  font-size:1.25rem;
-  margin-bottom:10px;
-}
-
-.fort-card p{
-  font-size:.95rem;
-  color:#cbd5e1;
-}
-</style>
-
-
-
-
-<!-- ==========================================================
-     PUBLICATION STREAM — EXECUTIVE CONTENT
-=========================================================== -->
-
-<section id="publications" style="margin-top:120px;">
-  <h2 class="section-title">Publications & Executive Briefings</h2>
-  <p class="section-sub">
-    Strategic insights, research papers, and architectural frameworks shaping the future of healthcare.
+  <h2 class="pub-title">Executive Publications</h2>
+  <p class="pub-sub">
+    Core position papers and strategic frameworks shaping Symbiotic Intelligence,
+    Crisis Architecture, and the evolution of national health ecosystems.
   </p>
 
   <div class="pub-grid">
 
-    <div class="pub-card">
+    <a href="research.html" class="pub-card">
       <img src="pub1.jpg" alt="Publication 1"/>
-      <h3>AI-Enhanced Medication Adherence & Recovery Monitoring</h3>
-      <p>
-        A patient-centric architecture upgrading post-visit monitoring loops,
-        powered by computer vision and predictive behavior modeling.
-      </p>
-      <a href="https://www.linkedin.com/posts/nader-lohrasbi_healthcareinnovation-aiarchitecture-computervision-activity-7397555618976518146-M4C4" target="_blank">
-        Read →
-      </a>
-    </div>
+      <div class="pub-card-title">The Architecture Over Repair Doctrine</div>
+    </a>
 
-    <div class="pub-card">
+    <a href="research.html" class="pub-card">
       <img src="pub2.jpg" alt="Publication 2"/>
-      <h3>Confidence Scores in AI Clinical Referrals</h3>
-      <p>
-        A governance-aligned referral model ensuring clarity, confidence,
-        and trust between human clinicians and AI systems.
-      </p>
-      <a href="https://www.linkedin.com/posts/nader-lohrasbi_confidence-scores-in-ai-referrals-when-machines-activity-7392549904650293249-8CFv" target="_blank">
-        Read →
-      </a>
-    </div>
+      <div class="pub-card-title">Symbiotic Intelligence — National Applications</div>
+    </a>
 
-    <div class="pub-card">
+    <a href="research.html" class="pub-card">
       <img src="pub3.jpg" alt="Publication 3"/>
-      <h3>Security, Privacy & Compliance in AI Healthcare</h3>
-      <p>
-        A multi-layer trust architecture unifying encryption, RBAC,
-        anomaly detection, and sovereign compliance frameworks.
-      </p>
-      <a href="https://www.linkedin.com/posts/nader-lohrasbi_trustarchitecture-datasecurity-aiinhealthcare-activity-7382331601025941504-ntCF" target="_blank">
-        Read →
-      </a>
-    </div>
+      <div class="pub-card-title">Crisis Architecture in AI-Driven Healthcare</div>
+    </a>
 
-  </div> <!-- pub-grid -->
+  </div>
+
 </section>
 
+
+
+<!-- ============================================================
+     COLLABORATION CTA — ENTERPRISE LEVEL
+============================================================= -->
+
 <style>
-.pub-grid{
-  margin-top:40px;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:30px;
-}
-
-.pub-card{
-  background:rgba(0,20,40,0.6);
-  padding:22px;
-  border-radius:20px;
-  border:1px solid rgba(56,189,248,.22);
-  backdrop-filter:blur(10px);
-  transition:.3s;
-  color:#e2e8f0;
-}
-
-.pub-card:hover{
-  background:rgba(0,40,80,0.7);
-  transform:translateY(-4px);
-  border-color:rgba(56,189,248,.4);
-}
-
-.pub-card img{
-  width:100%;
-  border-radius:14px;
-  margin-bottom:14px;
-}
-
-.pub-card h3{
-  margin-bottom:10px;
-  font-size:1.2rem;
-  color:#f1f5f9;
-}
-
-.pub-card p{
-  font-size:.92rem;
-  color:#cbd5e1;
-  line-height:1.55;
-  margin-bottom:12px;
-}
-
-.pub-card a{
-  color:#7dd3fc;
-  font-weight:600;
-  font-size:.9rem;
-}
+  .cta-block{
+    margin-top:120px;
+    background:#00101f;
+    border:1px solid rgba(56,189,248,.18);
+    border-radius:22px;
+    padding:60px;
+    text-align:center;
+  }
+  .cta-title{
+    font-size:2rem;
+    color:#38bdf8;
+    margin-bottom:18px;
+  }
+  .cta-text{
+    color:#94a3b8;
+    max-width:760px;
+    margin:0 auto 30px auto;
+    font-size:1.05rem;
+    line-height:1.6;
+  }
+  .cta-btn{
+    display:inline-block;
+    padding:14px 36px;
+    background:#38bdf8;
+    border-radius:12px;
+    color:#000;
+    font-weight:600;
+    transition:.3s;
+  }
+  .cta-btn:hover{
+    opacity:.85;
+    transform:translateY(-3px);
+  }
 </style>
 
 
+<section class="container section">
 
+  <div class="cta-block">
 
-<!-- ==========================================================
-     EXECUTIVE CTA — CONTACT
-=========================================================== -->
+    <h2 class="cta-title">Collaborate with Lohrasbi Architecture Lab</h2>
 
-<section class="cta-section" style="margin-top:140px; margin-bottom:120px;">
-  <div class="cta-box">
-    <h2>Collaborate on National Health Architecture</h2>
-    <p>
-      Whether it’s redesigning hospital ecosystems, building AI governance frameworks,
-      or architecting national health operating systems, you can directly engage with
-      Lohrasbi Architecture Lab.
+    <p class="cta-text">
+      Engage with national-scale architectural design, crisis governance, and AI-driven transformation.
+      Whether you're building a country-level OS, redesigning hospital intelligence, or developing
+      next-generation clinical ecosystems — this lab provides the structural foundation.
     </p>
 
-    <a class="cta-btn" href="contact.html">Contact the Lab</a>
+    <a href="contact.html" class="cta-btn">Start a Strategic Conversation</a>
+
   </div>
+
 </section>
+<!-- ============================================================
+     ENTERPRISE FOOTER — SYSTEM SIGNATURE & GLOBAL NAVIGATION
+============================================================= -->
 
 <style>
-.cta-box{
-  background:linear-gradient(to bottom right,#001226,#00101d);
-  border:1px solid rgba(56,189,248,.25);
-  padding:50px;
-  border-radius:26px;
-  text-align:center;
-  max-width:900px;
-  margin:auto;
-  box-shadow:0 0 80px rgba(0,120,255,.18);
-}
-
-.cta-box h2{
-  color:#f1f5f9;
-  font-size:2rem;
-  margin-bottom:16px;
-}
-
-.cta-box p{
-  color:#cbd5e1;
-  font-size:1rem;
-  margin-bottom:26px;
-  line-height:1.6;
-}
-
-.cta-btn{
-  display:inline-block;
-  padding:14px 34px;
-  font-size:1.05rem;
-  border-radius:999px;
-  background:#38bdf8;
-  color:#001219;
-  font-weight:700;
-  transition:.3s;
-}
-
-.cta-btn:hover{
-  background:#7dd3fc;
-  transform:translateY(-3px);
-}
+  .footer{
+    background:#000b18;
+    border-top:1px solid rgba(56,189,248,.25);
+    padding:80px 0;
+    margin-top:160px;
+  }
+  .footer-shell{
+    max-width:1280px;
+    margin:auto;
+    padding:0 24px;
+    display:flex;
+    justify-content:space-between;
+    gap:60px;
+  }
+  .footer-left{
+    max-width:420px;
+  }
+  .footer-left h3{
+    font-size:1.55rem;
+    color:#38bdf8;
+    margin-bottom:12px;
+  }
+  .footer-left p{
+    color:#94a3b8;
+    margin-bottom:18px;
+    line-height:1.6;
+  }
+  .footer-meta{
+    color:#64748b;
+    font-size:.85rem;
+  }
+  .footer-right{
+    display:flex;
+    gap:60px;
+  }
+  .footer-column h4{
+    font-size:1.05rem;
+    color:#f1f5f9;
+    margin-bottom:12px;
+  }
+  .footer-column a{
+    display:block;
+    color:#94a3b8;
+    margin-bottom:6px;
+    transition:.3s;
+    font-size:.92rem;
+  }
+  .footer-column a:hover{
+    color:#7dd3fc;
+  }
+  @media(max-width:900px){
+    .footer-shell{
+      flex-direction:column;
+      gap:40px;
+    }
+  }
 </style>
-
-
-
-
-<!-- ==========================================================
-     ENTERPRISE FOOTER — SYSTEM SIGNATURE
-=========================================================== -->
 
 <footer class="footer">
   <div class="footer-shell">
 
+    <!-- LEFT -->
     <div class="footer-left">
       <h3>Lohrasbi Architecture Lab</h3>
       <p>
@@ -1388,12 +1146,12 @@ header{
         crisis architecture, and AI-driven transformation across
         Europe and the Middle East.
       </p>
-
       <div class="footer-meta">
         © 2025 Dr. Nader Lohrasbi — All Rights Reserved.
       </div>
     </div>
 
+    <!-- RIGHT -->
     <div class="footer-right">
 
       <div class="footer-column">
@@ -1401,7 +1159,8 @@ header{
         <a href="index.html">Home</a>
         <a href="architecture.html">Architecture Lab</a>
         <a href="blueprints.html">Blueprints</a>
-        <a href="research.html">Research</a>
+        <a href="research.html">Research Hub</a>
+        <a href="os-map.html">OS Interactive Map</a>
         <a href="contact.html">Contact</a>
       </div>
 
@@ -1410,15 +1169,17 @@ header{
         <a href="https://www.linkedin.com/in/nader-lohrasbi" target="_blank">LinkedIn</a>
         <a href="https://orcid.org/0009-0004-4232-2953" target="_blank">ORCID</a>
         <a href="https://scholar.google.com/citations?user=sz_EXuAAAAAJ" target="_blank">Google Scholar</a>
-        <a href="https://github.com/DrNaderLohrasbi" target="_blank">GitHub</a>
+        <a href="https://papers.ssrn.com/" target="_blank">SSRN</a>
+        <a href="https://zenodo.org" target="_blank">Zenodo</a>
+        <a href="https://figshare.com" target="_blank">Figshare</a>
       </div>
 
       <div class="footer-column">
         <h4>Repositories</h4>
-        <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=9241472" target="_blank">SSRN</a>
-        <a href="https://zenodo.org/search?q=Nader%20Lohrasbi" target="_blank">Zenodo</a>
-        <a href="https://figshare.com/authors/Nader_Lohrasbi/22668938" target="_blank">Figshare</a>
+        <a href="https://github.com/DrNaderLohrasbi" target="_blank">GitHub</a>
         <a href="https://issuu.com/drnaderlohrasbi" target="_blank">Issuu</a>
+        <a href="https://www.slideshare.net/DrNaderLohrasbi" target="_blank">SlideShare</a>
+        <a href="https://drlohrasbi.substack.com" target="_blank">Substack</a>
       </div>
 
     </div>
@@ -1427,136 +1188,149 @@ header{
 </footer>
 
 
-<style>
-.footer{
-  background:#000b18;
-  border-top:1px solid rgba(56,189,248,.25);
-  padding:70px 0;
-  margin-top:120px;
-}
 
-.footer-shell{
-  max-width:1280px;
-  margin:auto;
-  padding:0 22px;
-  display:flex;
-  justify-content:space-between;
-  gap:60px;
-}
-
-.footer-left{
-  max-width:420px;
-}
-
-.footer-left h3{
-  font-size:1.5rem;
-  color:#38bdf8;
-  margin-bottom:12px;
-}
-
-.footer-left p{
-  color:#94a3b8;
-  line-height:1.6;
-  margin-bottom:20px;
-}
-
-.footer-meta{
-  font-size:.85rem;
-  color:#64748b;
-}
-
-.footer-right{
-  display:flex;
-  gap:60px;
-}
-
-.footer-column h4{
-  font-size:1.05rem;
-  color:#f1f5f9;
-  margin-bottom:12px;
-}
-
-.footer-column a{
-  display:block;
-  color:#94a3b8;
-  margin-bottom:6px;
-  font-size:.92rem;
-  transition:.3s;
-}
-
-.footer-column a:hover{
-  color:#7dd3fc;
-}
-
-@media (max-width:900px){
-  .footer-shell{
-    flex-direction:column;
-    gap:40px;
-  }
-}
-</style>
-
-
-
-
-<!-- ==========================================================
-     FINAL EXTENDED JSON-LD KNOWLEDGE GRAPH
-=========================================================== -->
+<!-- ============================================================
+     EXTENDED JSON-LD KNOWLEDGE GRAPH (ENTERPRISE EDITION)
+============================================================= -->
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
 
+    /* --------------------------------------------------------
+       PERSON — PRIMARY IDENTITY
+    -------------------------------------------------------- */
     {
       "@type": "Person",
-      "@id": "https://lohrasbi.info#person",
+      "@id": "https://lohrasbi.info/#person",
       "name": "Dr. Nader Lohrasbi",
       "jobTitle": "Healthcare Transformation Architect & AI Strategist",
+      "description": "Architecting national health systems, Symbiotic Intelligence, Crisis Architecture, and 30-strategy blueprint frameworks across Europe & the Middle East.",
       "url": "https://lohrasbi.info",
       "image": "https://lohrasbi.info/profile-main.jpg",
-      "worksFor": { "@id": "https://lohrasbi.info#org" },
+      "nationality": "Iranian-British",
+      "affiliation": { "@id": "https://lohrasbi.info/#org" },
+      "worksFor": { "@id": "https://lohrasbi.info/#org" },
       "knowsAbout": [
-        "Healthcare Systems Architecture",
-        "AI Strategy",
-        "Crisis Architecture",
         "Symbiotic Intelligence",
         "Health Nation OS",
-        "National Health Logistics",
-        "Medical Interoperability Frameworks",
-        "Quantum-Safe Clinical Communication"
+        "Crisis Architecture",
+        "AI Governance",
+        "Distributed Hospital Intelligence",
+        "Macro-Micro Alignment",
+        "Financial Nervous Systems",
+        "National Digital Twins"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/nader-lohrasbi",
+        "https://orcid.org/0009-0004-4232-2953",
+        "https://scholar.google.com/citations?user=sz_EXuAAAAAJ",
+        "https://github.com/DrNaderLohrasbi",
+        "https://zenodo.org",
+        "https://papers.ssrn.com",
+        "https://figshare.com",
+        "https://issuu.com/drnaderlohrasbi",
+        "https://www.slideshare.net/DrNaderLohrasbi",
+        "https://drlohrasbi.substack.com"
       ]
     },
 
+    /* --------------------------------------------------------
+       ORGANIZATION — LOHRASBI ARCHITECTURE LAB
+    -------------------------------------------------------- */
     {
       "@type": "Organization",
-      "@id": "https://lohrasbi.info#org",
+      "@id": "https://lohrasbi.info/#org",
       "name": "Lohrasbi Architecture Lab",
+      "founder": { "@id": "https://lohrasbi.info/#person" },
       "url": "https://lohrasbi.info",
       "logo": "https://lohrasbi.info/favicon-96x96.png",
-      "description":
-        "A strategic laboratory advancing national health systems, AI governance, and system-wide transformation.",
-      "founder": { "@id": "https://lohrasbi.info#person" }
+      "description": "A strategic architectural laboratory designing national health operating systems, crisis governance models, distributed clinical intelligence layers, and 30 strategic blueprint modules."
     },
 
-    {
-      "@type": "CreativeWorkSeries",
-      "name": "Strategic Blueprint Library",
-      "url": "https://lohrasbi.info/blueprints.html",
-      "creator": { "@id": "https://lohrasbi.info#person" },
-      "about":
-        "A 30-module architecture series defining the Health Nation OS."
-    },
-
+    /* --------------------------------------------------------
+       WEBSITE IDENTITY + NAVIGATION
+    -------------------------------------------------------- */
     {
       "@type": "WebSite",
+      "@id": "https://lohrasbi.info/#website",
       "url": "https://lohrasbi.info",
       "name": "Lohrasbi Architecture Lab",
-      "publisher": { "@id": "https://lohrasbi.info#org" }
-    }
+      "publisher": { "@id": "https://lohrasbi.info/#org" },
+      "inLanguage": "en"
+    },
+
+    {
+      "@type": "ItemList",
+      "@id": "https://lohrasbi.info/#navigation",
+      "itemListElement": [
+        { "@type": "SiteNavigationElement", "position": 1, "name": "Home", "url": "https://lohrasbi.info/index.html" },
+        { "@type": "SiteNavigationElement", "position": 2, "name": "Architecture Lab", "url": "https://lohrasbi.info/architecture.html" },
+        { "@type": "SiteNavigationElement", "position": 3, "name": "Blueprints", "url": "https://lohrasbi.info/blueprints.html" },
+        { "@type": "SiteNavigationElement", "position": 4, "name": "Research Hub", "url": "https://lohrasbi.info/research.html" },
+        { "@type": "SiteNavigationElement", "position": 5, "name": "OS Map", "url": "https://lohrasbi.info/os-map.html" },
+        { "@type": "SiteNavigationElement", "position": 6, "name": "Contact", "url": "https://lohrasbi.info/contact.html" }
+      ]
+    },
+
+    /* --------------------------------------------------------
+       CREATIVE WORK SERIES — STRATEGIC BLUEPRINT LIBRARY
+    -------------------------------------------------------- */
+    {
+      "@type": "CreativeWorkSeries",
+      "@id": "https://lohrasbi.info/#blueprint-series",
+      "name": "Strategic Blueprint Library",
+      "creator": { "@id": "https://lohrasbi.info/#person" },
+      "description": "Thirty strategic architecture modules forming the structural backbone of the Health Nation OS.",
+      "url": "https://lohrasbi.info/blueprints.html"
+    },
+
+    /* --------------------------------------------------------
+       30 BLUEPRINT MODULES — CREATIVEWORK OBJECTS
+    -------------------------------------------------------- */
+
+    { "@type":"CreativeWork","position":1,"name":"Symbiotic Intelligence Command Center","url":"https://lohrasbi.info/bp-01-health-nation-os.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":2,"name":"Architecture Over Repair Doctrine","url":"https://lohrasbi.info/bp-02-architecture-over-repair.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":3,"name":"System Integrity Dome","url":"https://lohrasbi.info/bp-03-crisis-architecture-framework.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":4,"name":"Predictive Emergency Mobility Network","url":"https://lohrasbi.info/bp-04-strategic-control-tower.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":5,"name":"Clinical Efficiency Paradox","url":"https://lohrasbi.info/bp-05-clinical-efficiency-paradox.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+
+    { "@type":"CreativeWork","position":6,"name":"12-Layer AI Governance Model","url":"https://lohrasbi.info/bp-06-ai-governance-model.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":7,"name":"Federated Clinical Reasoning Engine","url":"https://lohrasbi.info/bp-07-macro-micro-alignment.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":8,"name":"Financial Nervous System","url":"https://lohrasbi.info/bp-08-financial-nervous-system.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":9,"name":"Distributed Diagnostic Grid","url":"https://lohrasbi.info/bp-09-distributed-care-city.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":10,"name":"Intelligent Workforce Orchestration","url":"https://lohrasbi.info/bp-10-intelligent-workforce-orchestration.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+
+    { "@type":"CreativeWork","position":11,"name":"Artificial Soul Framework","url":"https://lohrasbi.info/bp-11-artificial-soul-framework.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":12,"name":"Bespoke AI Assistant","url":"https://lohrasbi.info/bp-12-bespoke-ai-assistant.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":13,"name":"Federated Clinical Reasoning (Advanced Layer)","url":"https://lohrasbi.info/bp-13-federated-clinical-reasoning-engine.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":14,"name":"Multi-Agent Care Workflow AI","url":"https://lohrasbi.info/bp-14-multi-agent-care-workflow-ai.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":15,"name":"Medical NLP Interoperability Pipeline","url":"https://lohrasbi.info/bp-15-medical-nlp-pipeline-for-global-interoperability.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+
+    { "@type":"CreativeWork","position":16,"name":"Predictive Patient Journey Engine","url":"https://lohrasbi.info/bp-16-ai-empowered-clinical-simulation-lab.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":17,"name":"Autonomous Hospital Control Loop","url":"https://lohrasbi.info/bp-17-national-digital-twin-for-healthcare.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":18,"name":"Zero-Trust AI Health Exchange","url":"https://lohrasbi.info/bp-18.jpg","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":19,"name":"Medical Preference Learning Engine","url":"https://lohrasbi.info/bp-19-clinical-cognition-ai-layer.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":20,"name":"Hybrid On-Device Clinical AI","url":"https://lohrasbi.info/bp-20-continuous-national-learning-health-model.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+
+    { "@type":"CreativeWork","position":21,"name":"50% Urban Traffic Reduction Model","url":"https://lohrasbi.info/bp-21-self-healing-health-infrastructure.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":22,"name":"Predictive Emergency Mobility — Advanced Tier","url":"https://lohrasbi.info/bp-22-health-system-operational-neural-mesh.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":23,"name":"National Health Logistic Spine","url":"https://lohrasbi.info/bp-23-autonomous-health-supply-chain-grid.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":24,"name":"Distributed Diagnostic Grid — Advanced Tier","url":"https://lohrasbi.info/bp-24-intelligent-health-transportation-network.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":25,"name":"Smart Travel-to-Treatment Corridor","url":"https://lohrasbi.info/bp-25-national-health-resilience-index.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+
+    { "@type":"CreativeWork","position":26,"name":"Patient-Family Experience Ecosystem","url":"https://lohrasbi.info/bp-26-dynamic-waiting-room-elimination-system.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":27,"name":"Intelligent Recovery Network","url":"https://lohrasbi.info/bp-27-clinical-capacity-forecasting-grid.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":28,"name":"Health Equity Heatmap Engine","url":"https://lohrasbi.info/bp-28-national-health-mission-control.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":29,"name":"National Surgical Capacity Marketplace","url":"https://lohrasbi.info/bp-29-national-health-operating-system-kernel.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} },
+    { "@type":"CreativeWork","position":30,"name":"Ultra-Secure Telehealth Architecture","url":"https://lohrasbi.info/bp-30-health-nation-digital-twin.html","isPartOf":{"@id":"https://lohrasbi.info/#blueprint-series"} }
+
   ]
 }
 </script>
+
+
 
 </body>
 </html>
